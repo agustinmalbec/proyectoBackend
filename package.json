@@ -1,0 +1,12 @@
+{
+  "name": "backendapp",
+  "version": "1.0.0",
+  "description": "Proyecto de aplicacion backend para la plataforma coderhouse",
+  "main": "asd.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agustin Malbec",
+  "license": "ISC"
+}
