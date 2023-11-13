@@ -1,4 +1,3 @@
-import { log } from 'console';
 import fs from 'fs';
 
 class ProductManager {
@@ -39,11 +38,12 @@ class ProductManager {
 
     getProductById(productId) {
         try {
-            const product = this.products.find((finded) => finded.id === productId);
+            const product = this.products.find((finded) => finded.id === Number(productId));
             if (product) {
                 return product;
             } else {
-                return console.log(`Not found ID ${productId}`);
+                console.log(`Not found ID ${productId}`);
+                return;
             }
         } catch (error) {
             console.log(`Ha ocurrido un error: ${error}`);
@@ -55,13 +55,15 @@ class ProductManager {
             const requiredFields = ['title', 'description', 'price', 'thumbnail', 'code', 'stock'];
             for (let field of requiredFields) {
                 if (!product[field]) {
-                    return console.log(`Falta el campo ${field}`);
+                    console.log(`Falta el campo ${field}`);
+                    return;
                 }
             }
 
             const find = this.products.find((finded) => finded.code === product.code);
             if (find !== undefined) {
-                return console.log("El campo CODE se encuentra repetido");
+                console.log("El campo CODE se encuentra repetido");
+                return;
             }
 
             product.id = this.products.length > 0 ? this.products[this.products.length - 1].id + 1 : 1;
@@ -69,9 +71,9 @@ class ProductManager {
 
             const response = await this.saveFile(this.products);
             if (response) {
-                console.log("Usuario agregado correctamente");
+                console.log("Producto agregado correctamente");
             } else {
-                console.log("Hubo un error al crear un usuario");
+                console.log("Hubo un error al agregar un producto");
             }
 
             return product;
@@ -85,12 +87,14 @@ class ProductManager {
             const product = this.products.find((prod) => prod.id === productId);
             const index = this.products.findIndex(prod => prod.id === productId);
             if (index === -1) {
-                return console.log('No se encontro el producto');
+                console.log('No se encontro el producto');
+                return;
             }
             update.id = product.id;
             this.products[index] = update;
             await this.saveFile(this.products);
-            return console.log("Actualizado correctamente");
+            console.log("Actualizado correctamente");
+            return update;
         } catch (error) {
             console.log(`Ha ocurrido un error: ${error}`);
         }
@@ -111,11 +115,35 @@ class ProductManager {
     }
 }
 
-const producto1 = { title: 'producto prueba', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc123', stock: 25 };
+const productManager = new ProductManager('./products.json');
+export default productManager;
 
-const manager = new ProductManager('./products.json');
-/* console.log(manager.getProducts());
-manager.addProduct(producto1);
-manager.getProductById(2);
-console.log(manager.getProducts()); */
-manager.deleteProduct(1);
+const producto1 = { title: 'producto prueba', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc1', stock: 25 };
+const producto2 = { title: 'producto 2', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc2', stock: 25 };
+const producto3 = { title: 'producto 2', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc3', stock: 25 };
+const producto4 = { title: 'producto 4', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc4', stock: 25 };
+const producto5 = { title: 'producto 5', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc5', stock: 25 };
+const producto6 = { title: 'producto 6', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc6', stock: 25 };
+const producto7 = { title: 'producto 7', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc7', stock: 25 };
+const producto8 = { title: 'producto 8', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc8', stock: 25 };
+const producto9 = { title: 'producto 9', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc9', stock: 25 };
+const producto10 = { title: 'producto 10', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc10', stock: 25 };
+
+
+async function test() {
+    console.log(manager.getProducts());
+    await productManager.addProduct(producto1);
+    await productManager.addProduct(producto2);
+    await productManager.addProduct(producto3);
+    await productManager.addProduct(producto4);
+    await productManager.addProduct(producto5);
+    await productManager.addProduct(producto6);
+    await productManager.addProduct(producto7);
+    await productManager.addProduct(producto8);
+    await productManager.addProduct(producto9);
+    await productManager.addProduct(producto10);
+    await productManager.getProductById(2);
+    console.log(productManager.getProducts());
+}
+
+//test(); 
