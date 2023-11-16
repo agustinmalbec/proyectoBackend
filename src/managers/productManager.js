@@ -14,7 +14,6 @@ class ProductManager {
         } else {
             this.products = [];
         }
-
     }
 
     async saveFile(data) {
@@ -28,7 +27,7 @@ class ProductManager {
         }
     }
 
-    getProducts() {
+    async getProducts() {
         try {
             return this.products;
         } catch (error) {
@@ -36,7 +35,7 @@ class ProductManager {
         }
     }
 
-    getProductById(productId) {
+    async getProductById(productId) {
         try {
             const product = this.products.find((finded) => finded.id === Number(productId));
             if (product) {
@@ -115,7 +114,7 @@ class ProductManager {
     }
 }
 
-const productManager = new ProductManager('./products.json');
+const productManager = new ProductManager('./data/products.json');
 export default productManager;
 
 const producto1 = { title: 'producto prueba', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc1', stock: 25 };
