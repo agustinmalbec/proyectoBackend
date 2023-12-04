@@ -1,4 +1,5 @@
 import fs from 'fs';
+import productManager from './products.manager.js';
 
 class CartManager {
     constructor(path) {
@@ -26,8 +27,9 @@ class CartManager {
         }
     }
 
-    async addCart(cart) {
+    async addCart() {
         try {
+            const cart = [];
             cart.products = [];
             cart.id = this.carts.length > 0 ? this.carts[this.carts.length - 1].id + 1 : 1;
             this.carts.push(cart);
@@ -64,14 +66,24 @@ class CartManager {
             const pid = Number(productId);
             const cart = this.carts.find((finded) => finded.id === Number(cartId));
             const index = cart.products.findIndex((finded) => finded.product === pid);
+            const product = await productManager.getProductById(productId);
+
+            if (!product) {
+                console.log('No se concontro el producto');
+                return;
+            }
+
             if (index === -1) {
                 cart.products.push({ product: pid, quantity: 1 });
                 console.log('Se agrego al carrito');
+                const stock = product.stock--;
+                productManager.updateProduct(productId, stock);
             } else {
                 cart.products[index].quantity++;
                 console.log('Se incremento la cantidad');
+                const stock = product.stock--;
+                productManager.updateProduct(productId, stock);
             }
-            console.log(this.carts)
             await this.saveFile(this.carts);
 
             return cart;

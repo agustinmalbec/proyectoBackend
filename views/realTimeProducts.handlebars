@@ -1,0 +1,30 @@
+<h2>Productos en tiempo real</h2>
+<h2>Agrega un producto</h2>
+<form id="addProduct">
+  <label for="title">Titulo</label>
+  <input type="text" name="title" id="title" />
+  <label for="description">Descripcion</label>
+  <input type="text" name="description" id="description" />
+  <label for="price">Precio</label>
+  <input type="number" name="price" id="price" />
+  <label for="code">Codigo</label>
+  <input type="text" name="code" id="code" />
+  <label for="stock">Stock</label>
+  <input type="number" name="stock" id="stock" />
+  <label for="category">Categoria</label>
+  <input type="text" name="category" id="category" />
+  <input type="submit" />
+</form>
+
+<h2>Eliminar un producto</h2>
+<form id="deleteProduct">
+  <label for="id">Id</label>
+  <input type="number" name="id" id="id" />
+  <input type="submit" />
+</form>
+
+<h3>Productos</h3>
+<div id="productList"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/realTimeProducts.js"></script>

@@ -51,11 +51,11 @@ class ProductManager {
 
     async addProduct(product) {
         try {
-            const requiredFields = ['title', 'description', 'price', 'thumbnail', 'code', 'stock'];
+            const requiredFields = ['title', 'description', 'price', 'status', 'category', 'thumbnails', 'code', 'stock'];
             for (let field of requiredFields) {
                 if (!product[field]) {
                     console.log(`Falta el campo ${field}`);
-                    return;
+                    return field;
                 }
             }
 
@@ -66,6 +66,7 @@ class ProductManager {
             }
 
             product.id = this.products.length > 0 ? this.products[this.products.length - 1].id + 1 : 1;
+            product.status = true;
             this.products.push(product);
 
             const response = await this.saveFile(this.products);
@@ -83,17 +84,17 @@ class ProductManager {
 
     async updateProduct(productId, update) {
         try {
-            const product = this.products.find((prod) => prod.id === productId);
-            const index = this.products.findIndex(prod => prod.id === productId);
+            const product = this.products.find((prod) => prod.id == productId);
+            const index = this.products.findIndex(prod => prod.id == productId);
             if (index === -1) {
                 console.log('No se encontro el producto');
                 return;
             }
-            update.id = product.id;
-            this.products[index] = update;
+            const productUpdated = { ...product, ...update };
+            this.products[index] = productUpdated;
             await this.saveFile(this.products);
             console.log("Actualizado correctamente");
-            return update;
+            return productUpdated;
         } catch (error) {
             console.log(`Ha ocurrido un error: ${error}`);
         }
@@ -101,6 +102,7 @@ class ProductManager {
 
     async deleteProduct(productId) {
         try {
+            console.log(productId);
             const index = this.products.findIndex(prod => prod.id === productId);
             if (index === -1) {
                 return console.log('No se encontro el producto');
