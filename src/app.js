@@ -1,15 +1,11 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
-import { Server } from 'socket.io';
-
+import { app, server } from './server.js';
 import viewsRouter from './routes/views.router.js';
 import cartsRouter from './routes/carts.router.js';
 import productsRouter from './routes/products.router.js';
-import productManager from './managers/products.manager.js';
+import mongoose from 'mongoose';
 
-
-
-const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -24,22 +20,11 @@ app.use('/api/carts', cartsRouter);
 app.use('/api/products', productsRouter);
 
 const PORT = 8080;
-const httpServer = app.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));
-
-const io = new Server(httpServer);
-io.on('connection', async (socket) => {
-    console.log('Nuevo usuario conectado');
-
-    socket.emit('products', await productManager.getProducts());
-    socket.on('addProduct', async (data) => {
-        const product = data;
-        product.status = true;
-        product.thumbnails = [];
-        await productManager.addProduct(product);
-        socket.emit('products', await productManager.getProducts());
+server.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));
+mongoose.connect('mongodb+srv://agustinmalbec123:123@ecommerce.hpnzfcb.mongodb.net/?retryWrites=true&w=majority')
+    .then(() => {
+        console.log('DB connected');
+    }).catch((error) => {
+        console.log('Ocurrio un error', error);
     });
-    socket.on('deleteProduct', async (data) => {
-        await productManager.deleteProduct(Number(data.id));
-        socket.emit('products', await productManager.getProducts());
-    })
-});
+

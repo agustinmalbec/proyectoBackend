@@ -51,6 +51,11 @@ class ProductManager {
 
     async addProduct(product) {
         try {
+            product.status = true;
+            if (!product.thumbnails) {
+                product.thumbnails = [];
+            }
+
             const requiredFields = ['title', 'description', 'price', 'status', 'category', 'thumbnails', 'code', 'stock'];
             for (let field of requiredFields) {
                 if (!product[field]) {
@@ -66,7 +71,7 @@ class ProductManager {
             }
 
             product.id = this.products.length > 0 ? this.products[this.products.length - 1].id + 1 : 1;
-            product.status = true;
+
             this.products.push(product);
 
             const response = await this.saveFile(this.products);

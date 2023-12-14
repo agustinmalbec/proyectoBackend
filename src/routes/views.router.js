@@ -1,11 +1,11 @@
 import { Router } from "express";
-import productManager from "../managers/products.manager.js";
+import productDAO from "../dao/mongoDb/products.manager.js";
 
 const viewsRouter = Router();
 
 viewsRouter.get('/', async (req, res) => {
     try {
-        const data = await productManager.getProducts();
+        const data = await productDAO.getProducts();
         res.render('index', { title: 'Productos', data });
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
