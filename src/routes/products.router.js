@@ -5,13 +5,22 @@ const productsRouter = Router();
 
 productsRouter.get('/', async (req, res) => {
     try {
-        const limit = req.query.limit;
-        const products = await productDAO.getProducts();
-        if (!products) {
-            return res.status(404).send('No se pudieron obtener los productos');
-        }
-        const limitedProducts = products.slice(0, limit);
-        res.send(limitedProducts);
+        const { limit = 10, page = 1, sort, price } = req.query;
+        const products = await productDAO.getProducts(limit, page);
+        const prevPage = products.prevPage;
+        const nextPage = products.nextPage;
+        const prevLink =
+            prevPage &&
+            `${req.baseUrl}/?page=${prevPage}&limit=${limit}&sort=${sort || ""
+            }&price=${encodeURIComponent(price || "")}${price ? `&price=${price}` : ""
+            }`;
+
+        const nextLink =
+            nextPage &&
+            `${req.baseUrl}/?page=${nextPage}&limit=${limit}&sort=${sort || ""
+            }&price=${encodeURIComponent(price || "")}${price ? `&price=${price}` : ""
+            }`;
+        res.send({ status: "success", payload: products, page: page, prevLink: prevLink, nextLink: nextLink });
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);
