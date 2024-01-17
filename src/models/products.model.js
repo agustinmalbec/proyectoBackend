@@ -34,7 +34,7 @@ const productSchema = new Schema({
     },
     status: {
         type: Boolean,
-        require: true,
+        required: true,
         default: true,
     },
 });

@@ -1,0 +1,55 @@
+<section class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-9">
+      <h1>Registrar un nuevo usuario</h1>
+      <form action="/api/users/register" method="post">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="text"
+              placeholder="Nombre"
+              aria-label="Nombre"
+              name="first_name"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              placeholder="Apellido"
+              aria-label="Apellido"
+              name="last_name"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="email"
+              placeholder="Email"
+              aria-label="Email"
+              name="email"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="number"
+              placeholder="Edad"
+              aria-label="Edad"
+              name="age"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="password"
+              placeholder="Contraseña"
+              aria-label="Contraseña"
+              name="password"
+            />
+          </div>
+          <button type="submit" class="col-10">
+            Registrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

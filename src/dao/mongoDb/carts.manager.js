@@ -1,4 +1,4 @@
-import cartModel from "../models/carts.model.js";
+import cartModel from "../../models/carts.model.js";
 
 class CartDAO {
     constructor() {
@@ -9,7 +9,7 @@ class CartDAO {
         try {
             return await this.model.create(cart);
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -17,7 +17,7 @@ class CartDAO {
         try {
             return await this.model.findOne({ _id: cartId });
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -25,7 +25,7 @@ class CartDAO {
         try {
             return await this.model.updateOne(cartId, products);
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -33,7 +33,7 @@ class CartDAO {
         try {
             return await this.model.deleteOne({ _id: cartId });
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -41,7 +41,7 @@ class CartDAO {
         try {
             return await this.model.updateOne(cartId, []);
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -53,7 +53,7 @@ class CartDAO {
             );
             return await cart.save();
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -61,7 +61,7 @@ class CartDAO {
         try {
             return await this.model.findByIdAndUpdate(id, { products }, { new: true });
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -76,10 +76,10 @@ class CartDAO {
                 cart.products[productIndex].quantity = quantity;
                 return await cart.save();
             } else {
-                console.log("Error al actualizar cantidad de productos");
+                throw new Error("Error al actualizar cantidad de productos");
             }
         } catch (error) {
-            console.log(`Ha ocurrido un error: ${error}`);
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 }

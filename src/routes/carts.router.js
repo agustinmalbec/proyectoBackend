@@ -8,7 +8,7 @@ cartsRouter.post('/', async (req, res) => {
     try {
         const cart = req.body
         await cartDAO.addCart(cart);
-        res.send(cart);
+        res.send('Carrito agregado correctamente');
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);
@@ -20,7 +20,7 @@ cartsRouter.get('/:cid', async (req, res) => {
         const cid = req.params.cid;
         const cart = await cartDAO.getCartById(cid);
         if (!cart) {
-            res.status(404).send(`No se encontro el carrito con id ${cid}`);
+            res.status(404).send(`No se encontró el carrito con id ${cid}`);
         }
         res.send(cart.products);
     } catch (error) {
@@ -43,9 +43,9 @@ cartsRouter.post('/:cid/product/:pid', async (req, res) => {
         }
         const cartUpdated = await cartDAO.addProductToCart({ _id: cart._id }, { products: cart.products });
         if (!cartUpdated) {
-            res.status(404).send('No se pudo agregar el producto al carrito');
+            return res.status(404).send('No se pudo agregar el producto al carrito');
         }
-        res.send(cart);
+        res.send('El producto se agrego correctamente');
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);
@@ -57,7 +57,7 @@ cartsRouter.delete('/:cid', async (req, res) => {
         const cid = req.params.cid;
         const cart = await cartDAO.deleteCartProducts(cid);
         if (!cart) {
-            res.status(404).send(`No se eliminaron los productos del carrito con id ${cid}`);
+            return res.status(404).send(`No se eliminaron los productos del carrito con id ${cid}`);
         }
         res.send(cart);
     } catch (error) {
@@ -68,7 +68,7 @@ cartsRouter.delete('/:cid', async (req, res) => {
 
 cartsRouter.delete('/:cid/product/:pid', async (req, res) => {
     try {
-        const deleted = await cartController.deleteProductFromCart(req.params.cid, req.params.pid);
+        const deleted = await cartDAO.deleteProductFromCart(req.params.cid, req.params.pid);
         res.send(deleted);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
@@ -78,7 +78,7 @@ cartsRouter.delete('/:cid/product/:pid', async (req, res) => {
 
 cartsRouter.put('/:cid', async (req, res) => {
     try {
-        const cartUpdated = await cartController.updateCart(req.params.cid, req.body);
+        const cartUpdated = await cartDAO.updateCart(req.params.cid, req.body);
         res.send(cartUpdated);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
@@ -89,7 +89,7 @@ cartsRouter.put('/:cid', async (req, res) => {
 cartsRouter.put('/:cid/product/:pid', async (req, res) => {
     try {
         const quantity = req.body.quantity;
-        const productUpdated = await cartController.updateProductCart(req.params.cid, req.params.pid, quantity);
+        const productUpdated = await cartDAO.updateProductCart(req.params.cid, req.params.pid, quantity);
         res.send(productUpdated);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
