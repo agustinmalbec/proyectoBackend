@@ -1,13 +1,19 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
+import mongoose from 'mongoose';
+import session from 'express-session';
+import passport from 'passport';
+
 import { app, server } from './server.js';
+import initializePassport from './config/passport.config.js';
+
 import viewsRouter from './routes/views.router.js';
 import cartsRouter from './routes/carts.router.js';
 import productsRouter from './routes/products.router.js';
-import mongoose from 'mongoose';
-import session from 'express-session';
 import sessionsRouter from './routes/sessions.router.js';
 import userRouter from './routes/users.router.js';
+
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -22,7 +28,11 @@ app.use(session({
     secret: 'secret',
     resave: true,
     saveUninitialized: true
-}))
+}));
+
+initializePassport();
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Routes
 app.use('/', viewsRouter);

@@ -1,39 +1,22 @@
 import { Router } from "express";
 import userDAO from "../dao/mongoDb/users.manager.js";
 import { createHash, isValidPassword } from "../utils.js";
+import passport from "passport";
 
 const userRouter = Router();
 
-userRouter.post('/register', async (req, res) => {
+userRouter.post('/register', passport.authenticate('register', { failureRedirect: '' }), async (req, res) => {
     try {
-        const { first_name, last_name, email, age, password } = req.body;
-        const exist = await userDAO.getUserByEmail(email);
-        if (exist) {
-            return res.status(400).send({ status: 'error', message: 'El usuario ya existe' });
-        }
-        const user = {
-            first_name,
-            last_name,
-            email,
-            age,
-            password: createHash(password)
-        }
-        if (email == 'adminCoder@coder.com') user.role = 'admin';
-        await userDAO.createUser(user);
         res.redirect('/login');
     } catch (error) {
         res.status(500).send(error);
     }
 });
 
-userRouter.post('/login', async (req, res) => {
+userRouter.post('/login', passport.authenticate('login', { failureRedirect: '' }), async (req, res) => {
     try {
-        const { email, password } = req.body;
-        const user = await userDAO.getUserByEmail(email);
-
-        if (!user) return res.status(401).send({ status: 'error', message: "Incorrect credentials" });
-
-        if (!isValidPassword(user, password)) return res.status(401).send({ status: 'error', error: "Incorrect pass" });
+        const user = req.user;
+        if (user.email == 'adminCoder@coder.com') user.role = 'admin';
 
         req.session.user = {
             first_name: user.first_name,
@@ -43,7 +26,6 @@ userRouter.post('/login', async (req, res) => {
         }
 
         res.redirect('/');
-
     } catch (error) {
         res.status(500).send(error);
     }
