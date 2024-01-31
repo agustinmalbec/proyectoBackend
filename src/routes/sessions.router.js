@@ -1,5 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
+import { generateJWToken } from "../utils.js";
 
 const sessionsRouter = Router();
 
@@ -21,7 +22,7 @@ sessionsRouter.get('/github', passport.authenticate('github', { scope: ['user:em
 
 sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureRedirect: '' }), async (req, res) => {
     const user = req.user;
-    const token = generateToken(user);
+    const token = generateJWToken(user);
     res.cookie('jwtCookieToken', token, {
         httpOnly: true,
         maxAge: 60000,
