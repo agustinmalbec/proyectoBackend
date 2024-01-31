@@ -50,13 +50,9 @@ userRouter.post('/login', async (req, res) => {
         res.cookie('jwtCookieToken', token,
             {
                 maxAge: 60000,
-                // httpOnly: true //No se expone la cookie
-                // httpOnly: false //Si se expone la cookie
-
+                httpOnly: true
             }
-
-        )
-        console.log(req.cookies);
+        );
         res.send({ message: "Login success!!" })
     } catch (error) {
         res.status(400).json({ error: error.message });

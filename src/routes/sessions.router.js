@@ -22,7 +22,7 @@ sessionsRouter.get('/github', passport.authenticate('github', { scope: ['user:em
 sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureRedirect: '' }), async (req, res) => {
     const user = req.user;
     const token = generateToken(user);
-    res.cookie('token', token, {
+    res.cookie('jwtCookieToken', token, {
         httpOnly: true,
         maxAge: 60000,
     }).redirect('/');
