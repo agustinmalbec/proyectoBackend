@@ -21,13 +21,11 @@ sessionsRouter.get('/github', passport.authenticate('github', { scope: ['user:em
 
 sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureRedirect: '' }), async (req, res) => {
     const user = req.user;
-    req.session.user = {
-        first_name: user.first_name,
-        last_name: user.last_name,
-        email: user.email,
-        age: user.age
-    }
-    res.redirect('/');
+    const token = generateToken(user);
+    res.cookie('token', token, {
+        httpOnly: true,
+        maxAge: 60000,
+    }).redirect('/');
 });
 
 sessionsRouter.get('/current', passport.authenticate('current', { session: false }), async (req, res) => {
