@@ -2,12 +2,15 @@ import { Router } from "express";
 import productDAO from "../dao/mongoDb/products.manager.js";
 import cartDAO from "../dao/mongoDb/carts.manager.js";
 import userDAO from "../dao/mongoDb/users.manager.js";
+import { passportCall } from "../utils.js";
+import passport from "passport";
 
 const viewsRouter = Router();
 
-viewsRouter.get('/', async (req, res) => {
+viewsRouter.get('/', passport.authenticate('current', { session: false }), async (req, res) => {
     try {
-        const user = req.session.user;
+        const user = req.user;
+        console.log(user);
         const { limit = 10, page = 1, query, sort = 1 } = req.query;
         const data = await productDAO.getProducts(limit, page, query, Number(sort));
         res.render('index', { title: 'Productos', data: data, user });

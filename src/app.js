@@ -12,8 +12,7 @@ import cartsRouter from './routes/carts.router.js';
 import productsRouter from './routes/products.router.js';
 import sessionsRouter from './routes/sessions.router.js';
 import userRouter from './routes/users.router.js';
-
-
+import cookieParser from 'cookie-parser';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,6 +32,7 @@ app.use(session({
 initializePassport();
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(cookieParser('asd'))
 
 // Routes
 app.use('/', viewsRouter);

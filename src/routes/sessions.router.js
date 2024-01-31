@@ -30,4 +30,14 @@ sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureR
     res.redirect('/');
 });
 
+sessionsRouter.get('/current', passport.authenticate('current', { session: false }), async (req, res) => {
+    try {
+        const user = req.user;
+        res.send('Usuario:' + JSON.stringify(user));
+    } catch (error) {
+        console.log(`Ha ocurrido un error: ${error}`);
+        res.status(500).send(error);
+    }
+});
+
 export default sessionsRouter;

@@ -1,10 +1,13 @@
 import passport from "passport";
 import passportLocal from "passport-local";
 import GitHubStrategy from 'passport-github2';
+import jwtStrategy from 'passport-jwt';
 import userDAO from "../dao/mongoDb/users.manager.js";
-import { createHash, isValidPassword } from "../utils.js";
+import { createHash, isValidPassword, PRIVATE_KEY } from "../utils.js";
 
 const localStrategy = passportLocal.Strategy;
+const JwtStrategy = jwtStrategy.Strategy;
+const ExtractJWT = jwtStrategy.ExtractJwt;
 
 const initializePassport = () => {
     passport.use('register', new localStrategy(
@@ -91,8 +94,30 @@ const initializePassport = () => {
         } catch (error) {
             done(error, false);
         };
-
     }));
+
+    passport.use('current', new JwtStrategy(
+        {
+            jwtFromRequest: ExtractJWT.fromExtractors([cookieExtractor]),
+            secretOrKey: PRIVATE_KEY
+        }, async (jwt_payload, done) => {
+            try {
+                delete jwt_payload.user.password;
+                return done(null, jwt_payload.user)
+            } catch (error) {
+                return done(error)
+            }
+        }
+    ));
 }
+
+
+const cookieExtractor = (req) => {
+    let token = null;
+    if (req && req.cookies) {
+        token = req.cookies['jwtCookieToken'];
+    }
+    return token;
+};
 
 export default initializePassport;
