@@ -10,7 +10,6 @@ const viewsRouter = Router();
 viewsRouter.get('/', passport.authenticate('current', { session: false }), async (req, res) => {
     try {
         const user = req.user;
-        console.log(user);
         const { limit = 10, page = 1, query, sort = 1 } = req.query;
         const data = await productDAO.getProducts(limit, page, query, Number(sort));
         res.render('index', { title: 'Productos', data: data, user });

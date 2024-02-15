@@ -6,6 +6,7 @@ import passport from 'passport';
 
 import { app, server } from './server.js';
 import initializePassport from './config/passport.config.js';
+import environment from './config/environment.config.js';
 
 import viewsRouter from './routes/views.router.js';
 import cartsRouter from './routes/carts.router.js';
@@ -24,7 +25,7 @@ app.set('view engine', 'handlebars');
 
 //Session
 app.use(session({
-    secret: 'secret',
+    secret: environment.KEY,
     resave: true,
     saveUninitialized: true
 }));
@@ -32,7 +33,7 @@ app.use(session({
 initializePassport();
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(cookieParser('asd'))
+app.use(cookieParser(environment.KEY))
 
 // Routes
 app.use('/', viewsRouter);
@@ -41,9 +42,9 @@ app.use('/api/products', productsRouter);
 app.use('/api/sessions', sessionsRouter);
 app.use('/api/users', userRouter);
 
-const PORT = 8080;
+const PORT = environment.PORT;
 server.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));
-mongoose.connect('mongodb+srv://agustinmalbec123:123@ecommerce.hpnzfcb.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect(environment.DB_LINK)
     .then(() => {
         console.log('DB connected');
     }).catch((error) => {

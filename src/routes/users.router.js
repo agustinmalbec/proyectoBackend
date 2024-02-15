@@ -3,6 +3,7 @@ import userDAO from "../dao/mongoDb/users.manager.js";
 import { createHash, isValidPassword } from "../utils.js";
 import passport from "passport";
 import { generateJWToken } from "../utils.js";
+import environment from "../config/environment.config.js";
 
 const userRouter = Router();
 
@@ -36,16 +37,16 @@ userRouter.post('/login', async (req, res) => {
     const { email, password } = req.body;
     try {
         let user = {};
-        if (email === 'adminCoder@coder.com') {
+        if (email === environment.ADMIN_USERNAME) {
             user.role = 'admin';
-            user.email = 'adminCoder@coder.com';
-            user.password = 'asd';
+            user.email = environment.ADMIN_USERNAME;
+            user.password = environment.ADMIN_PASSWORD;
             if (user.password !== password) throw new Error('Contraseña incorrecta');
         } else {
             user = await userDAO.getUserByEmail(email);
         }
         if (!user) throw new Error('Ese usuario no existe');
-        if (!isValidPassword(user, password) && email !== 'adminCoder@coder.com') throw new Error('Contraseña incorrecta');
+        if (!isValidPassword(user, password) && email !== environment.ADMIN_USERNAME) throw new Error('Contraseña incorrecta');
         const token = generateJWToken(user);
         res.cookie('jwtCookieToken', token,
             {

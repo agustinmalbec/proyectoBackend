@@ -3,7 +3,8 @@ import passportLocal from "passport-local";
 import GitHubStrategy from 'passport-github2';
 import jwtStrategy from 'passport-jwt';
 import userDAO from "../dao/mongoDb/users.manager.js";
-import { createHash, isValidPassword, PRIVATE_KEY } from "../utils.js";
+import { createHash, isValidPassword } from "../utils.js";
+import environment from "./environment.config.js";
 
 const localStrategy = passportLocal.Strategy;
 const JwtStrategy = jwtStrategy.Strategy;
@@ -73,24 +74,26 @@ const initializePassport = () => {
     });
 
     passport.use('github', new GitHubStrategy({
-        clientID: 'Iv1.121bc709b88c8123',
-        clientSecret: 'af503517eae74f4e9c3bb8f155255194e17aa0fd',
+        clientID: environment.GITHUB_CLIENT_ID,
+        clientSecret: environment.GITHUB_CLIENT_SECRET,
         callbackURL: 'http://localhost:8080/api/sessions/githubcallback',
     }, async (accesToken, refreshToken, profile, done) => {
         try {
+            if (!profile._json.email) {
+                profile._json.email = profile.profileUrl;
+            }
             let user = await userDAO.getUserByEmail(profile._json.email);
-            if (!user) {
-                let newUser = {
-                    first_name: profile._json.name,
-                    last_name: '',
-                    email: profile._json.email,
-                    password: '',
-                };
-                user = await userDAO.createUser(newUser);
+            if (user) {
                 done(null, user);
-            } else {
-                done(null, user);
+            }
+            let newUser = {
+                first_name: profile._json.name,
+                last_name: '',
+                email: profile._json.email,
+                password: '',
             };
+            user = await userDAO.createUser(newUser);
+            done(null, user);
         } catch (error) {
             done(error, false);
         };
@@ -99,7 +102,7 @@ const initializePassport = () => {
     passport.use('current', new JwtStrategy(
         {
             jwtFromRequest: ExtractJWT.fromExtractors([cookieExtractor]),
-            secretOrKey: PRIVATE_KEY
+            secretOrKey: environment.SECRET_KEY
         }, async (jwt_payload, done) => {
             try {
                 delete jwt_payload.user.password;
