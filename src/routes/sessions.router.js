@@ -1,6 +1,7 @@
 import { Router } from "express";
 import passport from "passport";
-import { generateJWToken } from "../utils.js";
+import { generateToken, middlewarePassportJWT } from "../middleware/jwt.middleware.js";
+import UserDTO from "../services/dto/users.dto.js";
 
 const sessionsRouter = Router();
 
@@ -22,21 +23,19 @@ sessionsRouter.get('/github', passport.authenticate('github', { scope: ['user:em
 
 sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureRedirect: '' }), async (req, res) => {
     const user = req.user;
-    const token = generateJWToken(user);
+    const token = generateToken(user);
     res.cookie('jwtCookieToken', token, {
         httpOnly: true,
         maxAge: 60000,
     }).redirect('/');
 });
 
-sessionsRouter.get('/current', passport.authenticate('current', { session: false }), async (req, res) => {
-    try {
-        const user = req.user;
-        res.send('Usuario:' + JSON.stringify(user));
-    } catch (error) {
-        console.log(`Ha ocurrido un error: ${error}`);
-        res.status(500).send(error);
-    }
+sessionsRouter.get('/current', middlewarePassportJWT, async (req, res) => {
+    const { user } = req.user;
+    delete user.password;
+    delete user.age;
+    delete user.cart;
+    res.status(200).send({ message: 'Sesión actual: ', user: new UserDTO(user) });
 });
 
 export default sessionsRouter;

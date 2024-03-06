@@ -1,24 +1,17 @@
-const form = document.getElementById('loginForm');
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const obj = {};
-    data.forEach((value, key) => obj[key] = value);
-    fetch('/api/users/login', {
+function login() {
+    const username = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const data = { username, password };
+    fetch('/api/users/authentication', {
         method: 'POST',
-        body: JSON.stringify(obj),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(result => {
-        if (result.status === 200) {
-            result.json()
-                .then(json => {
-                    window.location.replace('/');
-                });
-        } else if (result.status === 401) {
-            alert("Login invalido revisa tus credenciales!");
-        }
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
     })
-})
+        .then((response) => {
+            window.location.href = '/api/session/current';
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert(error);
+        });
+}

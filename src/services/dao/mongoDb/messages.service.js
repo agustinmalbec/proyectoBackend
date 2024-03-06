@@ -1,6 +1,6 @@
-import messageModel from "../../models/messages.model.js";
+import messageModel from '../../models/messages.model.js'
 
-class MessagesDAO {
+export default class MessagesService {
     constructor() {
         this.model = messageModel;
     }
@@ -9,7 +9,7 @@ class MessagesDAO {
         return await this.model.find();
     }
 
-    async addUser(user) {
+    /* async addUser(user) {
         let finded = await this.model.findOne({ user });
         if (finded) {
             return finded.user;
@@ -17,14 +17,22 @@ class MessagesDAO {
         await this.model.create({ user });
         finded = await this.model.findOne({ user });
         return finded.user;
+    } */
+
+    async addUser(user) {
+        return await this.model.create(user)
     }
 
-    async addMessage(user, msj) {
+    async getUser(user) {
+        return await this.model.findOne({ user });
+    }
+
+    /* async addMessage(user, msj) {
         const finded = await this.model.findOne({ user });
         finded.message.push(msj);
         return await finded.save();
+    } */
+    async addMessage(user, message) {
+
     }
 }
-
-const messagesDAO = new MessagesDAO();
-export default messagesDAO; 

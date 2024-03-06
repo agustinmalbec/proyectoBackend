@@ -1,6 +1,6 @@
 import userModel from "../../models/user.model.js";
 
-class UserDAO {
+export default class UserService {
     constructor() {
         this.model = userModel;
     }
@@ -11,6 +11,10 @@ class UserDAO {
 
     async getUserByEmail(email) {
         return await this.model.findOne({ email: email });
+    }
+
+    async getUserByCart(cart) {
+        return await this.model.findOne({ cart: cart });
     }
 
     async getUserById(id) {
@@ -24,8 +28,4 @@ class UserDAO {
     async updateUser(id, user) {
         return await this.model.updateOne({ _id: id }, user);
     }
-
 }
-
-const userDAO = new UserDAO();
-export default userDAO;

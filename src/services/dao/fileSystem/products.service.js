@@ -121,8 +121,8 @@ class ProductManager {
     }
 }
 
-const productManager = new ProductManager('./data/products.json');
-export default productManager;
+const productService = new ProductManager('./data/products.json');
+export default productService;
 
 const producto1 = { title: 'producto prueba', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc1', stock: 25 };
 const producto2 = { title: 'producto 2', description: 'Este es un producto prueba', price: 200, thumbnail: 'Sin imagen', code: 'abc2', stock: 25 };

@@ -1,8 +1,8 @@
 import { Server } from 'socket.io';
 import express from 'express';
 import http from 'http';
-import productDAO from './dao/mongoDb/products.manager.js';
-import messagesDAO from './dao/mongoDb/messages.manager.js';
+import productController from './controllers/products.controller.js';
+import messagesController from './controllers/messages.controller.js';
 
 export const app = express();
 export const server = http.createServer(app);
@@ -12,22 +12,22 @@ let us;
 io.on('connection', async (socket) => {
     console.log('Nuevo usuario conectado');
 
-    socket.emit('products', await productDAO.getProducts());
+    socket.emit('products', await productController.getProducts());
     socket.on('addProduct', async (product) => {
-        await productDAO.addProduct(product);
-        socket.emit('products', await productDAO.getProducts());
+        await productController.addProduct(product);
+        socket.emit('products', await productController.getProducts());
     });
     socket.on('deleteProduct', async (data) => {
-        await productDAO.deleteProduct(Number(data.id));
-        socket.emit('products', await productDAO.getProducts());
+        await productController.deleteProduct(Number(data.id));
+        socket.emit('products', await productController.getProducts());
     });
 
-    socket.emit('messages', await messagesDAO.getAllMessages());
+    socket.emit('messages', await messagesController.getAllMessages());
     socket.on('newUser', async (user) => {
-        us = await messagesDAO.addUser(user);
+        us = await messagesController.addUser(user);
     });
     socket.on('sendMessage', async (message) => {
-        await messagesDAO.addMessage(us, message);
-        socket.emit('messages', await messagesDAO.getAllMessages());
+        await messagesController.addMessage(us, message);
+        socket.emit('messages', await messagesController.getAllMessages());
     });
 });

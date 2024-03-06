@@ -1,20 +1,25 @@
 import { Router } from "express";
-import productDAO from "../dao/mongoDb/products.manager.js";
-import cartDAO from "../dao/mongoDb/carts.manager.js";
-import userDAO from "../dao/mongoDb/users.manager.js";
-import { passportCall } from "../utils.js";
-import passport from "passport";
+import cartController from "../controllers/carts.controller.js";
+import productController from "../controllers/products.controller.js";
+import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
+import { isAuth } from "../middleware/auth.middleware.js";
 
 const viewsRouter = Router();
 
-viewsRouter.get('/', passport.authenticate('current', { session: false }), async (req, res) => {
+viewsRouter.get('/', middlewarePassportJWT, isAuth, async (req, res) => {
     try {
         const user = req.user;
+        delete user.password;
         const { limit = 10, page = 1, query, sort = 1 } = req.query;
-        const data = await productDAO.getProducts(limit, page, query, Number(sort));
-        res.render('index', { title: 'Productos', data: data, user });
+        const data = await productController.getProducts(limit, page, query, Number(sort));
+        data.docs.cart = user.cart._id;
+        data.docs = data.docs.filter((e) => e.stock > 0);
+        res.render('index', {
+            title: 'Productos',
+            data: data,
+            user
+        });
     } catch (error) {
-        console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);
     }
 });
@@ -43,11 +48,12 @@ viewsRouter.get('/products', async (req, res) => {
     }
 });
 
-viewsRouter.get('/carts/:cid', async (req, res) => {
+viewsRouter.get('/carts/:cid', middlewarePassportJWT, async (req, res) => {
     try {
+        const { user } = req.user;
         const cartId = req.params.cid;
-        const data = await cartDAO.getCartById(cartId);
-        res.render('carts', { data: data.products });
+        const data = await cartController.getCartById(cartId);
+        res.render('carts', { data: data.products, user, cartId });
     } catch (error) {
         res.status(500).send(error);
     }

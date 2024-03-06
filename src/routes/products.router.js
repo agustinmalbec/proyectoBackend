@@ -1,12 +1,14 @@
 import { Router } from "express";
-import productDAO from "../dao/mongoDb/products.manager.js";
+import productController from "../controllers/products.controller.js";
+import { isAdmin } from "../middleware/auth.middleware.js";
+import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
 
 const productsRouter = Router();
 
 productsRouter.get('/', async (req, res) => {
     try {
         const { limit = 10, page = 1, query = null, sort = 1 } = req.query;
-        const products = await productDAO.getProducts(limit, page, query, sort);
+        const products = await productController.getProducts(limit, page, query, sort);
         const prevPage = products.prevPage;
         const nextPage = products.nextPage;
         const prevLink =
@@ -30,7 +32,7 @@ productsRouter.get('/', async (req, res) => {
 productsRouter.get('/:pid', async (req, res) => {
     try {
         const pid = req.params.pid;
-        const product = await productDAO.getProductById(pid);
+        const product = await productController.getProductById(pid);
         if (!product) {
             return res.status(404).send(`No se encotro el producto con id ${pid}`);
         }
@@ -41,10 +43,10 @@ productsRouter.get('/:pid', async (req, res) => {
     }
 });
 
-productsRouter.post('/', async (req, res) => {
+productsRouter.post('/', middlewarePassportJWT, isAdmin, async (req, res) => {
     try {
         const product = req.body;
-        const response = await productDAO.addProduct(product);
+        const response = await productController.addProduct(product);
         if (typeof (response) == 'string') {
             return res.status(404).send(`No se pudo agregar el producto, falta el campo ${response}`);
         }
@@ -55,11 +57,11 @@ productsRouter.post('/', async (req, res) => {
     }
 });
 
-productsRouter.put('/:pid', async (req, res) => {
+productsRouter.put('/:pid', middlewarePassportJWT, isAdmin, async (req, res) => {
     try {
         const pid = req.params.pid;
         const update = req.body;
-        const updatedProduct = await productDAO.updateProduct(pid, update);
+        const updatedProduct = await productController.updateProduct(pid, update);
         if (!updatedProduct) {
             return res.status(404).send(`No se pudo actualizar el producto con id ${pid}`);
         }
@@ -70,10 +72,10 @@ productsRouter.put('/:pid', async (req, res) => {
     }
 });
 
-productsRouter.delete('/:pid', async (req, res) => {
+productsRouter.delete('/:pid', middlewarePassportJWT, isAdmin, async (req, res) => {
     try {
         const pid = req.params.pid;
-        const deleted = await productDAO.deleteProduct(pid);
+        const deleted = await productController.deleteProduct(pid);
         if (!deleted) {
             return res.status(404).send(`No se pudo eliminar el producto con id ${pid}`);
         }

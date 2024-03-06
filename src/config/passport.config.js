@@ -2,9 +2,10 @@ import passport from "passport";
 import passportLocal from "passport-local";
 import GitHubStrategy from 'passport-github2';
 import jwtStrategy from 'passport-jwt';
-import userDAO from "../dao/mongoDb/users.manager.js";
+import userController from "../controllers/users.controller.js";
 import { createHash, isValidPassword } from "../utils.js";
 import environment from "./environment.config.js";
+import cartController from "../controllers/carts.controller.js";
 
 const localStrategy = passportLocal.Strategy;
 const JwtStrategy = jwtStrategy.Strategy;
@@ -16,7 +17,7 @@ const initializePassport = () => {
         async (req, username, password, done) => {
             const { first_name, last_name, email, age } = req.body;
             try {
-                const exist = await userDAO.getUserByEmail(email);
+                const exist = await userController.getUserByEmail(email);
                 if (exist) {
                     console.log('El usuario ya existe');
                     done(null, false);
@@ -26,9 +27,10 @@ const initializePassport = () => {
                     last_name,
                     email,
                     age,
-                    password: createHash(password)
+                    password: createHash(password),
+                    cart: await cartController.addCart(),
                 }
-                const result = await userDAO.createUser(user);
+                const result = await userController.createUser(user);
                 return done(null, result);
             } catch (error) {
                 return done('Error de registro' + error);
@@ -41,7 +43,7 @@ const initializePassport = () => {
         async (req, username, password, done) => {
             const { email } = req.body;
             try {
-                const user = await userDAO.getUserByEmail(email);
+                const user = await userController.getUserByEmail(email);
 
                 if (!user) {
                     console.log('No existe el usuario');
@@ -66,7 +68,7 @@ const initializePassport = () => {
 
     passport.deserializeUser(async (id, done) => {
         try {
-            let user = await userDAO.getUserById(id);
+            let user = await userController.getUserById(id);
             done(null, user);
         } catch (error) {
             console.log('Error al deserializar usuario' + error);
@@ -82,18 +84,20 @@ const initializePassport = () => {
             if (!profile._json.email) {
                 profile._json.email = profile.profileUrl;
             }
-            let user = await userDAO.getUserByEmail(profile._json.email);
-            if (user) {
+            let user = await userController.getUserByEmail(profile._json.email);
+            if (!user) {
+                let newUser = {
+                    first_name: profile._json.name,
+                    last_name: '',
+                    email: profile._json.email,
+                    password: '',
+                    cart: await cartController.addCart(),
+                };
+                user = await userController.createUser(newUser);
                 done(null, user);
-            }
-            let newUser = {
-                first_name: profile._json.name,
-                last_name: '',
-                email: profile._json.email,
-                password: '',
+            } else {
+                done(null, user);
             };
-            user = await userDAO.createUser(newUser);
-            done(null, user);
         } catch (error) {
             done(error, false);
         };

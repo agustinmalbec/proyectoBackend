@@ -1,0 +1,22 @@
+<h2 id="userCart" data-id="{{cartId}}">Su carrito es el
+  {{cartId}}
+</h2>
+<a href="/">Volver al index</a>
+
+{{#each data}}
+  <div class="col-md-3">
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Nombre: </b> {{this.product.title}}</li>
+        <li class="list-group-item"><b>Categoria:
+          </b>{{this.product.category}}</li>
+        <li class="list-group-item"><b>Precio: </b> {{this.product.price}}</li>
+        <li class="list-group-item"><b>Cantidad: </b> {{this.quantity}}</li>
+      </ul>
+    </div>
+  </div>
+{{/each}}
+
+<button id="finishCart">Finalizar la compra</button>
+
+<script src="/js/cart.js"></script>

@@ -1,13 +1,17 @@
 import { Router } from "express";
-import cartDAO from "../dao/mongoDb/carts.manager.js";
-import productDAO from "../dao/mongoDb/products.manager.js";
+import cartController from "../controllers/carts.controller.js";
+import productController from "../controllers/products.controller.js";
+import { isUser } from "../middleware/auth.middleware.js";
+import ticketController from "../controllers/tickets.controller.js";
+import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
+import userController from "../controllers/users.controller.js";
 
 const cartsRouter = Router();
 
 cartsRouter.post('/', async (req, res) => {
     try {
         const cart = req.body
-        await cartDAO.addCart(cart);
+        await cartController.addCart(cart);
         res.send('Carrito agregado correctamente');
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
@@ -18,7 +22,7 @@ cartsRouter.post('/', async (req, res) => {
 cartsRouter.get('/:cid', async (req, res) => {
     try {
         const cid = req.params.cid;
-        const cart = await cartDAO.getCartById(cid);
+        const cart = await cartController.getCartById(cid);
         if (!cart) {
             res.status(404).send(`No se encontró el carrito con id ${cid}`);
         }
@@ -29,23 +33,15 @@ cartsRouter.get('/:cid', async (req, res) => {
     }
 });
 
-cartsRouter.post('/:cid/product/:pid', async (req, res) => {
+cartsRouter.post('/:cid/product/:pid', middlewarePassportJWT, isUser, async (req, res) => {
     try {
-        const cid = req.params.cid;
-        const pid = req.params.pid;
-        const cart = await cartDAO.getCartById(cid);
-        const prod = await productDAO.getProductById(pid);
-        const find = cart.products.findIndex(e => e.product._id == pid);
-        if (find != -1) {
-            cart.products[find].quantity++;
+        const addProdCart = await cartController.addProductToCart(req.params.cid, req.params.pid);
+        if (!addProdCart) {
+            res.status(404).send('No hay stock del producto');
         } else {
-            cart.products.push({ product: prod._id, quantity: 1 });
+            console.log('Se agrego el producto');
         }
-        const cartUpdated = await cartDAO.addProductToCart({ _id: cart._id }, { products: cart.products });
-        if (!cartUpdated) {
-            return res.status(404).send('No se pudo agregar el producto al carrito');
-        }
-        res.send('El producto se agrego correctamente');
+        res.status(201).send(addProdCart);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);
@@ -55,7 +51,7 @@ cartsRouter.post('/:cid/product/:pid', async (req, res) => {
 cartsRouter.delete('/:cid', async (req, res) => {
     try {
         const cid = req.params.cid;
-        const cart = await cartDAO.deleteCartProducts(cid);
+        const cart = await cartController.deleteCartProducts(cid);
         if (!cart) {
             return res.status(404).send(`No se eliminaron los productos del carrito con id ${cid}`);
         }
@@ -68,7 +64,7 @@ cartsRouter.delete('/:cid', async (req, res) => {
 
 cartsRouter.delete('/:cid/product/:pid', async (req, res) => {
     try {
-        const deleted = await cartDAO.deleteProductFromCart(req.params.cid, req.params.pid);
+        const deleted = await cartController.deleteProductFromCart(req.params.cid, req.params.pid);
         res.send(deleted);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
@@ -78,7 +74,7 @@ cartsRouter.delete('/:cid/product/:pid', async (req, res) => {
 
 cartsRouter.put('/:cid', async (req, res) => {
     try {
-        const cartUpdated = await cartDAO.updateCart(req.params.cid, req.body);
+        const cartUpdated = await cartController.updateCart(req.params.cid, req.body);
         res.send(cartUpdated);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
@@ -89,8 +85,47 @@ cartsRouter.put('/:cid', async (req, res) => {
 cartsRouter.put('/:cid/product/:pid', async (req, res) => {
     try {
         const quantity = req.body.quantity;
-        const productUpdated = await cartDAO.updateProductCart(req.params.cid, req.params.pid, quantity);
+        const productUpdated = await cartController.updateProductCart(req.params.cid, req.params.pid, quantity);
         res.send(productUpdated);
+    } catch (error) {
+        console.log(`Ha ocurrido un error: ${error}`);
+        res.status(500).send(error);
+    }
+});
+
+cartsRouter.put('/:cid/purchase', async (req, res) => {
+    try {
+        const cart = await cartController.getCartById(req.params.cid);
+        const finalCart = [];
+        const outOfStock = [];
+        let amount = 0;
+        const user = await userController.getUserByCart(cart);
+        cart.products.forEach(async element => {
+            const productId = element.product._id;
+            const product = await productController.getProductById(productId);
+            if (element.quantity > product.stock) {
+                outOfStock.push(product._id);
+            } else {
+                product.stock -= element.quantity;
+                amount += product.price * element.quantity;
+                await productController.updateProduct(productId, product);
+                finalCart.push(product);
+                console.log(amount);
+            }
+        });
+
+        console.log(amount);
+        if (amount > 0) {
+            await ticketController.addTicket({ amount: amount, email: user.email });
+            await cartController.updateCart(cart, []);
+        }
+        if (outOfStock.length > 0) {
+            await cartController.updateCart(cart, []);
+            res.send(outOfStock);
+        } else {
+            res.send('Compra realizada con éxito');
+        }
+
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);

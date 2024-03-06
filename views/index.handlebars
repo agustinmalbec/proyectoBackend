@@ -1,10 +1,11 @@
 {{#if user}}
 <h2>Bienvenido {{user.first_name}} a la pagina de productos</h2>
-<p>Tus datos son</p>
+<p id="userCart" data-id="{{user.cart._id}}">Tus datos son</p>
 <ul>
 	<li>Nombre: {{user.first_name}}</li>
 	<li>Apellido: {{user.last_name}}</li>
 	<li>Email: {{user.email}}</li>
+	<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
 	<a href="/api/users/logout" type="submit">Cerrar sesión</a>
 </ul>
 {{else}}
@@ -20,7 +21,7 @@
 			<li class="list-group-item"><b>Categoría:</b> {{category}}</li>
 			<li class="list-group-item"><b>Precio:</b> {{price}}</li>
 		</ul>
-		<button>Agregar al carrito</button>
+		<button class="add" id="{{_id}}">Agregar al carrito</button>
 	</div>
 </div>
 {{/each}}
@@ -42,3 +43,5 @@
 		</ul>
 	</nav>
 </div>
+
+<script src="js/index.js"></script>

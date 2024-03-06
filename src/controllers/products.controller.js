@@ -1,13 +1,13 @@
-import productModel from '../../models/products.model.js';
+import { productService } from "../services/service.js";
 
-class ProductDAO {
+class ProductController {
     constructor() {
-        this.model = productModel;
+        this.controller = productService;
     }
 
     async getProducts(limit, page, filter, sort) {
         try {
-            return await this.model.paginate({}, { lean: true, limit, page, sort: { price: sort } });
+            return await this.controller.getProducts(limit, page, filter, sort);
         } catch (error) {
             throw new Error(`Ha ocurrido un error: ${error}`);
         }
@@ -15,7 +15,7 @@ class ProductDAO {
 
     async getProductById(productId) {
         try {
-            return await this.model.findOne({ _id: productId });
+            return await this.controller.getProductById(productId);
         } catch (error) {
             throw new Error(`Ha ocurrido un error: ${error}`);
         }
@@ -29,21 +29,19 @@ class ProductDAO {
                     throw new Error(`Falta el campo ${field}`);
                 }
             }
-            const find = await this.model.findOne({ code: product.code });
-            console.log(find);
+            const find = await this.controller.getProductByCode({ code: product.code });
             if (find !== null) {
                 throw new Error("El campo CODE se encuentra repetido");
             }
-            console.log('asd');
-            return await this.model.create(product);
+            return await this.controller.addProduct(product);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`)
+            throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 
     async updateProduct(productId, update) {
         try {
-            return await this.model.updateOne({ _id: productId }, update);
+            return await this.controller.updateProduct(productId, update);
         } catch (error) {
             throw new Error(`Ha ocurrido un error: ${error}`);
         }
@@ -51,12 +49,12 @@ class ProductDAO {
 
     async deleteProduct(productId) {
         try {
-            return await this.model.deleteOne({ _id: productId })
+            return await this.controller.deleteProduct(productId)
         } catch (error) {
             throw new Error(`Ha ocurrido un error: ${error}`);
         }
     }
 }
 
-const productDAO = new ProductDAO();
-export default productDAO;
+const productController = new ProductController();
+export default productController;

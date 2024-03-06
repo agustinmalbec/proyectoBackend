@@ -1,13 +1,13 @@
 import { Router } from "express";
-import userDAO from "../dao/mongoDb/users.manager.js";
+import userController from "../controllers/users.controller.js";
 import { createHash, isValidPassword } from "../utils.js";
 import passport from "passport";
-import { generateJWToken } from "../utils.js";
+import { generateToken } from "../middleware/jwt.middleware.js";
 import environment from "../config/environment.config.js";
 
 const userRouter = Router();
 
-userRouter.post('/register', passport.authenticate('register', { failureRedirect: '' }), async (req, res) => {
+userRouter.post('/register', passport.authenticate('register', { failureRedirect: '/register' }), async (req, res) => {
     try {
         res.redirect('/login');
     } catch (error) {
@@ -33,7 +33,7 @@ userRouter.post('/register', passport.authenticate('register', { failureRedirect
     }
 }); */
 
-userRouter.post('/login', async (req, res) => {
+userRouter.post('/authentication', async (req, res) => {
     const { email, password } = req.body;
     try {
         let user = {};
@@ -43,18 +43,17 @@ userRouter.post('/login', async (req, res) => {
             user.password = environment.ADMIN_PASSWORD;
             if (user.password !== password) throw new Error('Contraseña incorrecta');
         } else {
-            user = await userDAO.getUserByEmail(email);
+            user = await userController.getUserByEmail(email);
         }
         if (!user) throw new Error('Ese usuario no existe');
         if (!isValidPassword(user, password) && email !== environment.ADMIN_USERNAME) throw new Error('Contraseña incorrecta');
-        const token = generateJWToken(user);
+        const token = generateToken(user);
         res.cookie('jwtCookieToken', token,
             {
-                maxAge: 60000,
+                maxAge: 6000000,
                 httpOnly: true
             }
-        );
-        res.send({ message: "Login success!!" })
+        ).redirect('/');
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
@@ -62,12 +61,7 @@ userRouter.post('/login', async (req, res) => {
 
 userRouter.get('/logout', async (req, res) => {
     try {
-        req.session.destroy(error => {
-            if (error) {
-                res.json({ error: 'Logout error', message: 'Error al cerrar sesión' });
-            }
-            res.redirect('/');
-        });
+        res.clearCookie('jwtCookieToken').redirect('/login');
     } catch (error) {
         res.status(500).send(error);
     }

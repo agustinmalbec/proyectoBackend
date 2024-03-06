@@ -14,6 +14,8 @@ import productsRouter from './routes/products.router.js';
 import sessionsRouter from './routes/sessions.router.js';
 import userRouter from './routes/users.router.js';
 import cookieParser from 'cookie-parser';
+import messagesRouter from './routes/messages.router.js';
+import emailsRouter from './routes/mail.router.js';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -41,6 +43,8 @@ app.use('/api/carts', cartsRouter);
 app.use('/api/products', productsRouter);
 app.use('/api/sessions', sessionsRouter);
 app.use('/api/users', userRouter);
+app.use('/api/messages', messagesRouter);
+app.use('/api/emails', emailsRouter);
 
 const PORT = environment.PORT;
 server.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));

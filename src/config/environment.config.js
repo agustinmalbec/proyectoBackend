@@ -1,6 +1,20 @@
-import dotenv from "dotenv";
+import { Command } from 'commander';
+import dotenv from 'dotenv';
 
-dotenv.config();
+const program = new Command();
+
+program
+    .option('-d', 'Variable para debug', false)
+    .option('--mode <mode>', 'Modo de trabajo', 'dev')
+program.parse();
+
+console.log("Mode Option: ", program.opts().mode);
+
+const environment = program.opts().mode;
+
+dotenv.config({
+    path: environment === "prod" ? ".env.production" : ".env.development"
+});
 
 export default {
     PORT: process.env.PORT,
@@ -11,4 +25,6 @@ export default {
     KEY: process.env.KEY,
     GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
     GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+    GMAIL_ACCOUNT: process.env.GMAIL_ACCOUNT,
+    GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
 };
