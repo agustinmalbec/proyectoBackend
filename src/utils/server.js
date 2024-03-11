@@ -1,8 +1,8 @@
 import { Server } from 'socket.io';
 import express from 'express';
 import http from 'http';
-import productController from './controllers/products.controller.js';
-import messagesController from './controllers/messages.controller.js';
+import productController from '../controllers/products.controller.js';
+import messagesController from '../controllers/messages.controller.js';
 
 export const app = express();
 export const server = http.createServer(app);

@@ -3,7 +3,7 @@ import passportLocal from "passport-local";
 import GitHubStrategy from 'passport-github2';
 import jwtStrategy from 'passport-jwt';
 import userController from "../controllers/users.controller.js";
-import { createHash, isValidPassword } from "../utils.js";
+import { createHash, isValidPassword } from "../utils/utils.js";
 import environment from "./environment.config.js";
 import cartController from "../controllers/carts.controller.js";
 

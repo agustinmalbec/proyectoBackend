@@ -1,0 +1,12 @@
+info: POST - /loggerTest - [::ffff:127.0.0.1] - Thunder Client (https://www.thunderclient.com) - 2024-03-11T16:26:00.553Z
+info: POST - /loggerTest - [::ffff:127.0.0.1] - Thunder Client (https://www.thunderclient.com) - 2024-03-11T16:26:14.937Z
+info: GET - /loggerTest - [::ffff:127.0.0.1] - Thunder Client (https://www.thunderclient.com) - 2024-03-11T16:26:23.985Z
+debug: debug msg
+info: debug msg
+warning: warning msg
+info: GET - /loggerTest - [::ffff:127.0.0.1] - Thunder Client (https://www.thunderclient.com) - 2024-03-11T16:29:57.247Z
+debug: debug msg
+http: http msg
+info: debug msg
+warning: warning msg
+error: error msg

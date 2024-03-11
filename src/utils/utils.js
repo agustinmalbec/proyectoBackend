@@ -1,7 +1,8 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import passport from 'passport';
-import environment from './config/environment.config.js';
+import environment from '../config/environment.config.js';
+import { faker } from '@faker-js/faker';
 
 export const createHash = (password) => {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(10));
@@ -9,10 +10,6 @@ export const createHash = (password) => {
 
 export const isValidPassword = (user, password) => {
     return bcrypt.compareSync(password, user.password);
-}
-
-export const generateJWToken = (user) => {
-    return jwt.sign({ user }, environment.SECRET_KEY, { expiresIn: '24h' });
 }
 
 export const authToken = (req, res, next) => {
@@ -52,4 +49,18 @@ export const authorization = (role) => {
         if (req.user.role !== role) return res.status(403).send();
         next();
     }
+}
+
+export function generateProduct() {
+    const product = {
+        _id: faker.database.mongodbObjectId(),
+        title: faker.commerce.productName(),
+        category: faker.commerce.department(),
+        description: faker.commerce.productDescription(),
+        price: faker.commerce.price(),
+        thumbnail: faker.image.url(),
+        code: faker.finance.accountNumber(3),
+        stock: faker.string.numeric(2),
+    }
+    return product;
 }

@@ -2,8 +2,11 @@ import { Router } from "express";
 import productController from "../controllers/products.controller.js";
 import { isAdmin } from "../middleware/auth.middleware.js";
 import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
+import { generateProduct } from "../utils/utils.js";
+import errorHandler from '../errors/errorMiddleware.js';
 
 const productsRouter = Router();
+productsRouter.use(errorHandler)
 
 productsRouter.get('/', async (req, res) => {
     try {
@@ -42,8 +45,8 @@ productsRouter.get('/:pid', async (req, res) => {
         res.status(500).send(error);
     }
 });
-
-productsRouter.post('/', middlewarePassportJWT, isAdmin, async (req, res) => {
+// , middlewarePassportJWT, isAdmin
+productsRouter.post('/', async (req, res) => {
     try {
         const product = req.body;
         const response = await productController.addProduct(product);
@@ -52,8 +55,8 @@ productsRouter.post('/', middlewarePassportJWT, isAdmin, async (req, res) => {
         }
         res.send(product);
     } catch (error) {
-        console.log(`Ha ocurrido un error: ${error}`);
-        res.status(500).send(error);
+        console.error(error.cause);
+        res.status(500).send({ error: error.code, message: error.message });
     }
 });
 
@@ -80,6 +83,21 @@ productsRouter.delete('/:pid', middlewarePassportJWT, isAdmin, async (req, res) 
             return res.status(404).send(`No se pudo eliminar el producto con id ${pid}`);
         }
         res.send(`El producto con id ${pid} se elimino correctamente`);
+    } catch (error) {
+        console.log(`Ha ocurrido un error: ${error}`);
+        res.status(500).send(error);
+    }
+});
+
+productsRouter.post('/mockingproducts', async (req, res) => {
+    try {
+        let products = [];
+        for (let i = 0; i < 100; i++) {
+            let product = generateProduct()
+            products.push(product);
+            //await productController.addProduct(product);
+        }
+        res.json(products);
     } catch (error) {
         console.log(`Ha ocurrido un error: ${error}`);
         res.status(500).send(error);

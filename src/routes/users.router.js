@@ -1,6 +1,6 @@
 import { Router } from "express";
 import userController from "../controllers/users.controller.js";
-import { createHash, isValidPassword } from "../utils.js";
+import { createHash, isValidPassword } from "../utils/utils.js";
 import passport from "passport";
 import { generateToken } from "../middleware/jwt.middleware.js";
 import environment from "../config/environment.config.js";

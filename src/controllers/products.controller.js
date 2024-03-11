@@ -1,4 +1,7 @@
 import { productService } from "../services/service.js";
+import CustomError from '../errors/customError.js';
+import { createProductErrorInfo } from '../errors/customMessage.js'
+import errorCodes from "../errors/errorCodes.js";
 
 class ProductController {
     constructor() {
@@ -22,21 +25,26 @@ class ProductController {
     }
 
     async addProduct(product) {
-        try {
-            const requiredFields = ['title', 'description', 'price', 'category', 'code', 'stock'];
-            for (let field of requiredFields) {
-                if (!product[field]) {
-                    throw new Error(`Falta el campo ${field}`);
-                }
+        //try {
+        const requiredFields = ['title', 'description', 'price', 'category', 'code', 'stock'];
+        for (let field of requiredFields) {
+            if (!product[field]) {
+                CustomError.createError({
+                    name: "Product Create Error",
+                    cause: createProductErrorInfo({ product }),
+                    message: "Error tratando de crear un producto",
+                    code: errorCodes.INVALID_TYPES_ERROR
+                })
             }
-            const find = await this.controller.getProductByCode({ code: product.code });
-            if (find !== null) {
-                throw new Error("El campo CODE se encuentra repetido");
-            }
-            return await this.controller.addProduct(product);
-        } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
         }
+        const find = await this.controller.getProductByCode({ code: product.code });
+        if (find !== null) {
+            throw new Error("El campo CODE se encuentra repetido");
+        }
+        return await this.controller.addProduct(product);
+        /* } catch (error) {
+            throw new Error(`Ha ocurrido un error: ${error}`);
+        } */
     }
 
     async updateProduct(productId, update) {

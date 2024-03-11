@@ -30,7 +30,6 @@ export function isAdmin(req, res, next) {
 }
 
 export function isUser(req, res, next) {
-    console.log(req.user.role);
     if (req.user.role === 'user') {
         next();
     } else {
