@@ -9,17 +9,24 @@ const viewsRouter = Router();
 viewsRouter.get('/', middlewarePassportJWT, isAuth, async (req, res) => {
     try {
         const user = req.user;
-        delete user.password;
         const { limit = 10, page = 1, query, sort = 1 } = req.query;
         const data = await productController.getProducts(limit, page, query, Number(sort));
-        data.docs.cart = user.cart._id;
+
+        let isAdmin = true;
+        if (user.role !== 'admin') {
+            isAdmin = null;
+            data.docs.cart = user.cart._id;
+        }
         data.docs = data.docs.filter((e) => e.stock > 0);
+
         res.render('index', {
             title: 'Productos',
             data: data,
-            user
+            user,
+            isAdmin
         });
     } catch (error) {
+        req.logger.error(`No se cargo la vista index`);
         res.status(500).send(error);
     }
 });
@@ -28,6 +35,7 @@ viewsRouter.get('/realtimeproducts', (req, res) => {
     try {
         res.render('realTimeProducts', { title: 'Productos en tiempo real' });
     } catch (error) {
+        req.logger.error(`No se cargo la vista realtimeproducts`);
         res.status(500).send(error);
     }
 });
@@ -36,6 +44,7 @@ viewsRouter.get('/chat', async (req, res) => {
     try {
         res.render('chat', {});
     } catch (error) {
+        req.logger.error(`No se cargo la vista de chat`);
         res.status(500).send(error);
     }
 });
@@ -44,6 +53,7 @@ viewsRouter.get('/products', async (req, res) => {
     try {
         res.render('products', {});
     } catch (error) {
+        req.logger.error(`No se cargo la vista products`);
         res.status(500).send(error);
     }
 });
@@ -55,6 +65,7 @@ viewsRouter.get('/carts/:cid', middlewarePassportJWT, async (req, res) => {
         const data = await cartController.getCartById(cartId);
         res.render('carts', { data: data.products, user, cartId });
     } catch (error) {
+        req.logger.error(`No se cargo la vista del carrito`);
         res.status(500).send(error);
     }
 });
@@ -63,6 +74,7 @@ viewsRouter.get('/register', async (req, res) => {
     try {
         res.render('register', { title: 'Inicia sesión' });
     } catch (error) {
+        req.logger.error(`No se cargo la vista de registro`);
         res.status(500).send(error);
     }
 });
@@ -71,6 +83,7 @@ viewsRouter.get('/login', (req, res) => {
     try {
         res.render('login', { title: 'Registra tu usuario' });
     } catch (error) {
+        req.logger.error(`No se cargo la vista de login`);
         res.status(500).send(error);
     }
 });

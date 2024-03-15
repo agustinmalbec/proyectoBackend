@@ -1,9 +1,9 @@
 import { Router } from "express";
-import userController from "../controllers/users.controller.js";
-import { createHash, isValidPassword } from "../utils/utils.js";
+//import userController from "../controllers/users.controller.js";
+//import { createHash, isValidPassword } from "../utils/utils.js";
 import passport from "passport";
 import { generateToken } from "../middleware/jwt.middleware.js";
-import environment from "../config/environment.config.js";
+//import environment from "../config/environment.config.js";
 
 const userRouter = Router();
 
@@ -11,29 +11,27 @@ userRouter.post('/register', passport.authenticate('register', { failureRedirect
     try {
         res.redirect('/login');
     } catch (error) {
+        req.logger.error('No se pudo registrar');
         res.status(500).send(error);
     }
 });
 
-/* userRouter.post('/login', passport.authenticate('login', { failureRedirect: '' }), async (req, res) => {
+userRouter.post('/authentication', passport.authenticate('login', { failureRedirect: '' }), async (req, res) => {
+    const user = req.user;
     try {
-        const user = req.user;
-        if (user.email == 'adminCoder@coder.com') user.role = 'admin';
-
-        req.session.user = {
-            first_name: user.first_name,
-            last_name: user.last_name,
-            email: user.email,
-            age: user.age
-        }
-
-        res.redirect('/');
+        const token = generateToken(user);
+        res.cookie('jwtCookieToken', token,
+            {
+                maxAge: 6000000,
+                httpOnly: true
+            }
+        ).redirect('/');
     } catch (error) {
-        res.status(500).send(error);
+        req.logger.error('No se pudo iniciar sesión');
+        res.status(400).json({ error: error.message });
     }
-}); */
-
-userRouter.post('/authentication', async (req, res) => {
+});
+/* userRouter.post('/authentication', async (req, res) => {
     const { email, password } = req.body;
     try {
         let user = {};
@@ -45,7 +43,8 @@ userRouter.post('/authentication', async (req, res) => {
         } else {
             user = await userController.getUserByEmail(email);
         }
-        if (!user) throw new Error('Ese usuario no existe');
+        if (!user) throw new Error('El usuario no existe');
+
         if (!isValidPassword(user, password) && email !== environment.ADMIN_USERNAME) throw new Error('Contraseña incorrecta');
         const token = generateToken(user);
         res.cookie('jwtCookieToken', token,
@@ -55,14 +54,16 @@ userRouter.post('/authentication', async (req, res) => {
             }
         ).redirect('/');
     } catch (error) {
+        req.logger.error('No se pudo iniciar sesión');
         res.status(400).json({ error: error.message });
     }
-});
+}); */
 
 userRouter.get('/logout', async (req, res) => {
     try {
         res.clearCookie('jwtCookieToken').redirect('/login');
     } catch (error) {
+        req.logger.error('No se pudo finalizar la sesión');
         res.status(500).send(error);
     }
 });

@@ -5,8 +5,8 @@ export default class TicketRepository {
         this.service = dao;
     }
 
-    async addTicket(ticket) {
-        const newTicket = new TicketDTO(ticket);
+    async addTicket(amount, purchase) {
+        const newTicket = new TicketDTO(amount, purchase);
         return await this.service.addTicket(newTicket);
     }
 

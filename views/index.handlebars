@@ -5,7 +5,11 @@
 	<li>Nombre: {{user.first_name}}</li>
 	<li>Apellido: {{user.last_name}}</li>
 	<li>Email: {{user.email}}</li>
+	{{#if isAdmin}}
+	<a href="/realtimeproducts" type="submit">Editar productos</a>
+	{{else}}
 	<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
+	{{/if}}
 	<a href="/api/users/logout" type="submit">Cerrar sesión</a>
 </ul>
 {{else}}
@@ -13,20 +17,25 @@
 <a href="/login">Inicia sesión</a>
 {{/if}}
 
+<div class="container d-flex flex-wrap text-center">
 {{#each data.docs}}
-<div class="col-md-3">
-	<div class="card">
+<div class="g-col-6">
+	<div class="card" style="width: 18rem; ">
+		<img src={{thumbnails}} class="card-img-top" alt="...">
+		<div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><b>Nombre:</b> {{title}}</li>
 			<li class="list-group-item"><b>Categoría:</b> {{category}}</li>
 			<li class="list-group-item"><b>Precio:</b> {{price}}</li>
 		</ul>
-		<button class="add" id="{{_id}}">Agregar al carrito</button>
+		<button class="add btn btn-primary" id="{{_id}}">Agregar al carrito</button>
+		</div>
 	</div>
 </div>
 {{/each}}
+</div>
 
-<div class="col-12 text-center">
+<div class="container col-12 text-center">
 	<nav>
 		<ul class="pagination">
 			{{#if data.hasPrevPage}} <li class="page-item"> {{else}}

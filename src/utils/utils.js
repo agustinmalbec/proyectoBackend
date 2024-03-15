@@ -1,6 +1,5 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import passport from 'passport';
 import environment from '../config/environment.config.js';
 import { faker } from '@faker-js/faker';
 
@@ -26,23 +25,6 @@ export const authToken = (req, res, next) => {
     });
 }
 
-export const passportCall = (strategy) => {
-    return async (req, res, next) => {
-        console.log("Entrando a llamar strategy: ");
-        console.log(strategy);
-        passport.authenticate(strategy, function (err, user, info) {
-            if (err) return next(err);
-            if (!user) {
-                return res.status(401).send({ error: info.messages ? info.messages : info.toString() });
-            }
-            console.log("Usuario obtenido del strategy: ");
-            console.log(user);
-            req.user = user;
-            next();
-        })(req, res, next);
-    }
-};
-
 export const authorization = (role) => {
     return (req, res, next) => {
         if (!req.user) return res.status(401).send();
@@ -58,7 +40,7 @@ export function generateProduct() {
         category: faker.commerce.department(),
         description: faker.commerce.productDescription(),
         price: faker.commerce.price(),
-        thumbnail: faker.image.url(),
+        thumbnails: [faker.image.url()],
         code: faker.finance.accountNumber(3),
         stock: faker.string.numeric(2),
     }

@@ -10,16 +10,18 @@ export const io = new Server(server);
 let us;
 
 io.on('connection', async (socket) => {
-    console.log('Nuevo usuario conectado');
 
-    socket.emit('products', await productController.getProducts());
+    const products = await productController.getProducts(999999, 1, null, 1);
+    socket.emit('products', products.docs);
     socket.on('addProduct', async (product) => {
         await productController.addProduct(product);
-        socket.emit('products', await productController.getProducts());
+        const products = await productController.getProducts(999999, 1, null, 1);
+        socket.emit('products', products.docs);
     });
     socket.on('deleteProduct', async (data) => {
-        await productController.deleteProduct(Number(data.id));
-        socket.emit('products', await productController.getProducts());
+        await productController.deleteProduct(data);
+        const products = await productController.getProducts(999999, 1, null, 1);
+        socket.emit('products', products.docs);
     });
 
     socket.emit('messages', await messagesController.getAllMessages());

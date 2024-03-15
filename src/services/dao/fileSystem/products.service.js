@@ -107,7 +107,6 @@ class ProductManager {
 
     async deleteProduct(productId) {
         try {
-            console.log(productId);
             const index = this.products.findIndex(prod => prod.id === productId);
             if (index === -1) {
                 return console.log('No se encontro el producto');

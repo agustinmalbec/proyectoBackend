@@ -1,5 +1,6 @@
 import { cartService } from "../services/service.js";
 import productController from "./products.controller.js";
+import { logger } from '../middleware/logger.middleware.js';
 
 class CartController {
     constructor() {
@@ -10,7 +11,7 @@ class CartController {
         try {
             return await this.controller.addCart(cart);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -18,11 +19,11 @@ class CartController {
         try {
             const find = await this.controller.getCartById(cartId);
             if (!find) {
-                throw new Error(`El carrito con id: ${error}, no existe`);
+                return logger.error(`El carrito con id: ${error}, no existe`);
             }
             return await find;
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -38,7 +39,7 @@ class CartController {
             }
             return await this.controller.addProductToCart({ _id: cart._id }, { products: cart.products });
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -47,7 +48,7 @@ class CartController {
             await this.controller.getCartById(cartId);
             return await this.controller.updateCart(cartId, products);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -55,7 +56,7 @@ class CartController {
         try {
             return await this.controller.deleteCart(cartId);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -63,7 +64,7 @@ class CartController {
         try {
             return await this.controller.updateCart(cartId, []);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -75,7 +76,7 @@ class CartController {
             );
             return await cart.save();
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -89,10 +90,10 @@ class CartController {
                 cart.products[productIndex].quantity = quantity;
                 return await cart.save();
             } else {
-                throw new Error("Error al actualizar cantidad de productos");
+                logger.error("Error al actualizar cantidad de productos");
             }
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 }

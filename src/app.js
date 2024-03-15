@@ -16,7 +16,7 @@ import userRouter from './routes/users.router.js';
 import cookieParser from 'cookie-parser';
 import messagesRouter from './routes/messages.router.js';
 import emailsRouter from './routes/mail.router.js';
-import { loggerMiddleware } from './middleware/logger.middleware.js';
+import { logger, loggerMiddleware } from './middleware/logger.middleware.js';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -67,8 +67,8 @@ const PORT = environment.PORT;
 server.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));
 mongoose.connect(environment.DB_LINK)
     .then(() => {
-        console.log('DB connected');
+        logger.debug('DB connected');
     }).catch((error) => {
-        console.log('Ocurrió un error', error);
+        logger.debug('Ocurrió un error', error);
     });
 

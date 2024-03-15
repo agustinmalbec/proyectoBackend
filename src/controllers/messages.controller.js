@@ -1,4 +1,5 @@
 import { messageService } from "../services/service.js";
+import { logger } from '../middleware/logger.middleware.js';
 
 class MessagesController {
     constructor() {
@@ -9,7 +10,7 @@ class MessagesController {
         try {
             return await this.controller.getAllMessages();
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -17,11 +18,11 @@ class MessagesController {
         try {
             const find = await this.controller.getUser(user);
             if (!find) {
-                throw new Error('El usuario no existe');
+                return logger.error('El usuario no existe');
             }
             return find;
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -30,7 +31,7 @@ class MessagesController {
             const find = await this.controller.getUser(user);
             return await this.controller.addUser(find);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -40,7 +41,7 @@ class MessagesController {
             find.message.push(msj);
             return await find.save();
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 }
