@@ -5,6 +5,7 @@ import { isUser } from "../middleware/auth.middleware.js";
 import ticketController from "../controllers/tickets.controller.js";
 import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
 import userController from "../controllers/users.controller.js";
+import { authorization } from '../utils/utils.js';
 
 const cartsRouter = Router();
 
@@ -34,8 +35,13 @@ cartsRouter.get('/:cid', async (req, res) => {
     }
 });
 
-cartsRouter.post('/:cid/product/:pid', middlewarePassportJWT, isUser, async (req, res) => {
+cartsRouter.post('/:cid/product/:pid', middlewarePassportJWT, authorization('user', 'premium'), async (req, res) => {
     try {
+        const user = req.user;
+        const product = await productController.getProductById(req.params.pid);
+        if (user.role === 'premium' && user.email === product.owner) {
+            return req.logger.warning(`No se puede agregar un producto que hayas creado`);
+        }
         const addProdCart = await cartController.addProductToCart(req.params.cid, req.params.pid);
         if (!addProdCart) {
             req.logger.warning(`No hay stock del producto`);

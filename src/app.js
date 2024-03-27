@@ -62,6 +62,12 @@ app.get("/loggerTest", (req, res) => {
         res.status(500).send('err')
     }
 });
+app.get('*', (req, res) => {
+    res.status(404).render('error', {
+        title: 'Error',
+        message: req.message
+    });
+});
 
 const PORT = environment.PORT;
 server.listen(PORT, () => console.log(`Escuchando el puerto ${PORT}`));

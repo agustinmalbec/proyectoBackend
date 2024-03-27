@@ -44,7 +44,6 @@ class ProductController {
         if (find !== null) {
             return logger.error("El campo CODE se encuentra repetido");
         }
-
         return await this.controller.addProduct(product);
         /* } catch (error) {
             logger.error(`Ha ocurrido un error: ${error}`);

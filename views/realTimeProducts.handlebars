@@ -1,7 +1,12 @@
 <h2>Productos en tiempo real</h2>
 <a href="/">Volver al inicio</a>
 <h2>Agrega un producto</h2>
-<form id="addProduct" class="container text-center">
+<form
+  id="addProduct"
+  class="container text-center"
+  action="/api/products"
+  method="post"
+>
   <div class="row">
     <div class="col">
       <label class="form-label" for="title">Titulo</label>

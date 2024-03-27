@@ -25,11 +25,13 @@ export const authToken = (req, res, next) => {
     });
 }
 
-export const authorization = (role) => {
+export const authorization = (...roles) => {
     return (req, res, next) => {
         if (!req.user) return res.status(401).send();
-        if (req.user.role !== role) return res.status(403).send();
-        next();
+        for (const role of roles) {
+            if (req.user.role === role) return next();
+        }
+        return res.status(403).send();
     }
 }
 

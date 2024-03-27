@@ -7,9 +7,11 @@
 	<li>Email: {{user.email}}</li>
 	{{#if isAdmin}}
 	<a href="/realtimeproducts" type="submit">Editar productos</a>
-	{{else}}
-	<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
 	{{/if}}
+	<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
+	<form action="/api/users/premium/{{user._id}}" method="post">
+	<button type="submit">{{user.role}}</button>
+	</form>
 	<a href="/api/users/logout" type="submit">Cerrar sesión</a>
 </ul>
 {{else}}
@@ -21,7 +23,9 @@
 {{#each data.docs}}
 <div class="g-col-6">
 	<div class="card" style="width: 18rem; ">
+		{{#if thumbnails}}
 		<img src={{thumbnails}} class="card-img-top" alt="...">
+		{{/if}}
 		<div class="card-body">
     <h5 class="card-title">{{title}}</h5>
 		<ul class="list-group list-group-flush">

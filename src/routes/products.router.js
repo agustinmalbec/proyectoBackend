@@ -1,9 +1,9 @@
 import { Router } from "express";
 import productController from "../controllers/products.controller.js";
-import { isAdmin } from "../middleware/auth.middleware.js";
 import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
 import { generateProduct } from "../utils/utils.js";
 import errorHandler from '../errors/errorMiddleware.js';
+import { authorization } from '../utils/utils.js';
 
 const productsRouter = Router();
 productsRouter.use(errorHandler)
@@ -45,10 +45,12 @@ productsRouter.get('/:pid', async (req, res) => {
         res.status(500).send(error);
     }
 });
-// , middlewarePassportJWT, isAdmin
-productsRouter.post('/', async (req, res) => {
+
+productsRouter.post('/', middlewarePassportJWT, authorization('admin', 'premium'), async (req, res) => {
     try {
         const product = req.body;
+        const user = req.user;
+        product.owner = user.email;
         const response = await productController.addProduct(product);
         if (typeof (response) == 'string') {
             return res.status(404).send(`No se pudo agregar el producto, falta el campo ${response}`);
@@ -60,7 +62,7 @@ productsRouter.post('/', async (req, res) => {
     }
 });
 
-productsRouter.put('/:pid', middlewarePassportJWT, isAdmin, async (req, res) => {
+productsRouter.put('/:pid', middlewarePassportJWT, authorization('admin'), async (req, res) => {
     try {
         const pid = req.params.pid;
         const update = req.body;
@@ -75,9 +77,14 @@ productsRouter.put('/:pid', middlewarePassportJWT, isAdmin, async (req, res) => 
     }
 });
 
-productsRouter.delete('/:pid', middlewarePassportJWT, isAdmin, async (req, res) => {
+productsRouter.delete('/:pid', middlewarePassportJWT, authorization('admin', 'premium'), async (req, res) => {
     try {
+        const user = req.user;
         const pid = req.params.pid;
+        const product = await productController.getProductById(pid);
+        if (user.role === 'premium' && product.owner !== user.email) {
+            return console.log('Este usuario no creo este producto');
+        }
         const deleted = await productController.deleteProduct(pid);
         if (!deleted) {
             return res.status(404).send(`No se pudo eliminar el producto con id ${pid}`);

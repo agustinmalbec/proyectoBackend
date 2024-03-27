@@ -7,14 +7,22 @@ const deleteForm = document.getElementById('deleteProduct');
 addForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const data = Object.fromEntries(new FormData(e.target));
-    await socket.emit('addProduct', data);
+    await fetch('/api/products', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+    await socket.emit('update');
     addForm.reset();
 });
 
-deleteForm.addEventListener('submit', e => {
+deleteForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const data = Object.fromEntries(new FormData(e.target));
-    socket.emit('deleteProduct', { _id: Object.values(data) });
+    await fetch(`/api/products/${{ _id: data }}`, {
+        method: 'DELETE',
+    });
+    await socket.emit('update');
     deleteForm.reset();
 })
 
@@ -38,7 +46,10 @@ const render = async (data) => {
 };
 
 async function deleteProduct(productId) {
-    await socket.emit('deleteProduct', { _id: productId });
+    await fetch(`/api/products/${productId}`, {
+        method: 'DELETE'
+    });
+    await socket.emit('update');
 }
 
 socket.on('products', (data) => {

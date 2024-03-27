@@ -3,6 +3,7 @@ import cartController from "../controllers/carts.controller.js";
 import productController from "../controllers/products.controller.js";
 import { middlewarePassportJWT } from "../middleware/jwt.middleware.js";
 import { isAuth } from "../middleware/auth.middleware.js";
+import { authorization } from '../utils/utils.js'
 
 const viewsRouter = Router();
 
@@ -11,9 +12,8 @@ viewsRouter.get('/', middlewarePassportJWT, isAuth, async (req, res) => {
         const user = req.user;
         const { limit = 10, page = 1, query, sort = 1 } = req.query;
         const data = await productController.getProducts(limit, page, query, Number(sort));
-
         let isAdmin = true;
-        if (user.role !== 'admin') {
+        if (user.role !== 'admin' && user.role !== 'premium') {
             isAdmin = null;
             data.docs.cart = user.cart._id;
         }
@@ -87,5 +87,18 @@ viewsRouter.get('/login', (req, res) => {
         res.status(500).send(error);
     }
 });
+
+viewsRouter.get('/forgotPassword', (req, res) => {
+    res.render('forgotPassword', {
+        title: 'Olvido contraseña'
+    });
+});
+
+/* viewsRouter.get('/resetPassword', (req, res) => {
+    console.log(req);
+    res.render('resetPassword', {
+        title: 'Restablezca su contraseña'
+    });
+}); */
 
 export default viewsRouter;

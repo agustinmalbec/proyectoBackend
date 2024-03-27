@@ -13,13 +13,7 @@ io.on('connection', async (socket) => {
 
     const products = await productController.getProducts(999999, 1, null, 1);
     socket.emit('products', products.docs);
-    socket.on('addProduct', async (product) => {
-        await productController.addProduct(product);
-        const products = await productController.getProducts(999999, 1, null, 1);
-        socket.emit('products', products.docs);
-    });
-    socket.on('deleteProduct', async (data) => {
-        await productController.deleteProduct(data);
+    socket.on('update', async () => {
         const products = await productController.getProducts(999999, 1, null, 1);
         socket.emit('products', products.docs);
     });

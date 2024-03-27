@@ -506,3 +506,1834 @@ debug: Server is ready to take our messages
 debug: DB connected
 debug: Server is ready to take our messages
 debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 26/3/2024 - 11:30:07
+http: GET en / - at 26/3/2024 - 11:30:07
+error: GET en / - at 26/3/2024 - 11:30:07
+warning: GET en /login - at 26/3/2024 - 11:30:07
+http: GET en /login - at 26/3/2024 - 11:30:07
+error: GET en /login - at 26/3/2024 - 11:30:07
+warning: GET en /favicon.ico - at 26/3/2024 - 11:30:07
+http: GET en /favicon.ico - at 26/3/2024 - 11:30:07
+error: GET en /favicon.ico - at 26/3/2024 - 11:30:07
+warning: POST en /api/users/authentication - at 26/3/2024 - 11:30:24
+http: POST en /api/users/authentication - at 26/3/2024 - 11:30:24
+error: POST en /api/users/authentication - at 26/3/2024 - 11:30:24
+warning: GET en / - at 26/3/2024 - 11:30:24
+http: GET en / - at 26/3/2024 - 11:30:24
+error: GET en / - at 26/3/2024 - 11:30:24
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 26/3/2024 - 11:31:58
+http: GET en / - at 26/3/2024 - 11:31:58
+error: GET en / - at 26/3/2024 - 11:31:58
+warning: GET en / - at 26/3/2024 - 11:32:15
+http: GET en / - at 26/3/2024 - 11:32:15
+error: GET en / - at 26/3/2024 - 11:32:15
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 26/3/2024 - 11:32:30
+http: GET en / - at 26/3/2024 - 11:32:30
+error: GET en / - at 26/3/2024 - 11:32:30
+warning: GET en /login - at 26/3/2024 - 11:32:35
+http: GET en /login - at 26/3/2024 - 11:32:35
+error: GET en /login - at 26/3/2024 - 11:32:35
+warning: POST en /api/users/authentication - at 26/3/2024 - 11:32:45
+http: POST en /api/users/authentication - at 26/3/2024 - 11:32:45
+error: POST en /api/users/authentication - at 26/3/2024 - 11:32:45
+warning: GET en / - at 26/3/2024 - 11:32:45
+http: GET en / - at 26/3/2024 - 11:32:45
+error: GET en / - at 26/3/2024 - 11:32:45
+warning: GET en / - at 26/3/2024 - 11:33:10
+http: GET en / - at 26/3/2024 - 11:33:10
+error: GET en / - at 26/3/2024 - 11:33:10
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /login - at 26/3/2024 - 12:18:56
+http: GET en /login - at 26/3/2024 - 12:18:56
+error: GET en /login - at 26/3/2024 - 12:18:56
+warning: GET en /forgotPassword - at 26/3/2024 - 12:18:58
+http: GET en /forgotPassword - at 26/3/2024 - 12:18:58
+error: GET en /forgotPassword - at 26/3/2024 - 12:18:58
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 12:18:58
+http: GET en /js/forgotpass.js - at 26/3/2024 - 12:18:58
+error: GET en /js/forgotpass.js - at 26/3/2024 - 12:18:58
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /login - at 26/3/2024 - 13:30:12
+http: GET en /login - at 26/3/2024 - 13:30:12
+error: GET en /login - at 26/3/2024 - 13:30:12
+warning: GET en /forgotPassword - at 26/3/2024 - 13:30:14
+http: GET en /forgotPassword - at 26/3/2024 - 13:30:14
+error: GET en /forgotPassword - at 26/3/2024 - 13:30:14
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 13:30:57
+http: GET en /forgotPassword - at 26/3/2024 - 13:30:57
+error: GET en /forgotPassword - at 26/3/2024 - 13:30:57
+warning: GET en /forgotPassword - at 26/3/2024 - 13:31:06
+http: GET en /forgotPassword - at 26/3/2024 - 13:31:06
+error: GET en /forgotPassword - at 26/3/2024 - 13:31:06
+warning: GET en /forgotPassword - at 26/3/2024 - 13:32:12
+http: GET en /forgotPassword - at 26/3/2024 - 13:32:12
+error: GET en /forgotPassword - at 26/3/2024 - 13:32:12
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 13:32:25
+http: GET en /forgotPassword - at 26/3/2024 - 13:32:25
+error: GET en /forgotPassword - at 26/3/2024 - 13:32:25
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 13:33:35
+http: GET en /forgotPassword - at 26/3/2024 - 13:33:35
+error: GET en /forgotPassword - at 26/3/2024 - 13:33:35
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:37
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:37
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:37
+warning: GET en /forgotPassword - at 26/3/2024 - 13:33:43
+http: GET en /forgotPassword - at 26/3/2024 - 13:33:43
+error: GET en /forgotPassword - at 26/3/2024 - 13:33:43
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:48
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:48
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:33:48
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:29
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:29
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:29
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 13:34:37
+http: GET en /forgotPassword - at 26/3/2024 - 13:34:37
+error: GET en /forgotPassword - at 26/3/2024 - 13:34:37
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:40
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:40
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:40
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:52
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:52
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:34:52
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Ocurrió un error querySrv ECONNREFUSED _mongodb._tcp.ecommerce.hpnzfcb.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.ecommerce.hpnzfcb.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.ecommerce.hpnzfcb.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)","syscall":"querySrv"}
+error: undefined {"code":"EDNS","command":"CONN","errno":-3008,"hostname":"smtp.gmail.com","syscall":"getaddrinfo"}
+warning: GET en /forgotPassword - at 26/3/2024 - 13:36:20
+http: GET en /forgotPassword - at 26/3/2024 - 13:36:20
+error: GET en /forgotPassword - at 26/3/2024 - 13:36:20
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:36:22
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:36:22
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:36:22
+debug: Ocurrió un error querySrv ECONNREFUSED _mongodb._tcp.ecommerce.hpnzfcb.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.ecommerce.hpnzfcb.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.ecommerce.hpnzfcb.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:251:17)","syscall":"querySrv"}
+error: undefined {"code":"EDNS","command":"CONN","errno":-3008,"hostname":"smtp.gmail.com","syscall":"getaddrinfo"}
+warning: GET en /forgotPassword - at 26/3/2024 - 13:37:07
+http: GET en /forgotPassword - at 26/3/2024 - 13:37:07
+error: GET en /forgotPassword - at 26/3/2024 - 13:37:07
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:10
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:10
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:10
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 13:37:53
+http: GET en /forgotPassword - at 26/3/2024 - 13:37:53
+error: GET en /forgotPassword - at 26/3/2024 - 13:37:53
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:55
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:55
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:37:55
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/9aad4c3e-87be-4742-9736-3c536fc568c8 - at 26/3/2024 - 13:43:55
+http: GET en /api/users/passwordReset/9aad4c3e-87be-4742-9736-3c536fc568c8 - at 26/3/2024 - 13:43:55
+error: GET en /api/users/passwordReset/9aad4c3e-87be-4742-9736-3c536fc568c8 - at 26/3/2024 - 13:43:55
+warning: GET en /forgotPassword - at 26/3/2024 - 13:43:55
+http: GET en /forgotPassword - at 26/3/2024 - 13:43:55
+error: GET en /forgotPassword - at 26/3/2024 - 13:43:55
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:44:12
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:44:12
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:44:12
+warning: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:44:32
+http: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:44:32
+error: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:44:32
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:15
+http: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:15
+error: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:15
+warning: GET en /forgotPassword - at 26/3/2024 - 13:46:15
+http: GET en /forgotPassword - at 26/3/2024 - 13:46:15
+error: GET en /forgotPassword - at 26/3/2024 - 13:46:15
+warning: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:24
+http: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:24
+error: GET en /api/users/passwordReset/042ad2bd-df34-485f-bff8-7da64b45fd54 - at 26/3/2024 - 13:46:24
+warning: GET en /forgotPassword - at 26/3/2024 - 13:46:24
+http: GET en /forgotPassword - at 26/3/2024 - 13:46:24
+error: GET en /forgotPassword - at 26/3/2024 - 13:46:24
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 13:46:30
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 13:46:30
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 13:46:30
+warning: GET en /api/users/passwordReset/f6e07fc5-e253-4cf4-85ce-ad091d2deb41 - at 26/3/2024 - 13:46:38
+http: GET en /api/users/passwordReset/f6e07fc5-e253-4cf4-85ce-ad091d2deb41 - at 26/3/2024 - 13:46:38
+error: GET en /api/users/passwordReset/f6e07fc5-e253-4cf4-85ce-ad091d2deb41 - at 26/3/2024 - 13:46:38
+warning: GET en /resetPassword - at 26/3/2024 - 13:46:38
+http: GET en /resetPassword - at 26/3/2024 - 13:46:38
+error: GET en /resetPassword - at 26/3/2024 - 13:46:38
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 13:46:38
+http: GET en /js/forgotpass.js - at 26/3/2024 - 13:46:38
+error: GET en /js/forgotpass.js - at 26/3/2024 - 13:46:38
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /login - at 26/3/2024 - 21:59:01
+http: GET en /login - at 26/3/2024 - 21:59:01
+error: GET en /login - at 26/3/2024 - 21:59:01
+warning: GET en /favicon.ico - at 26/3/2024 - 21:59:02
+http: GET en /favicon.ico - at 26/3/2024 - 21:59:02
+error: GET en /favicon.ico - at 26/3/2024 - 21:59:02
+warning: GET en /forgotPassword - at 26/3/2024 - 21:59:03
+http: GET en /forgotPassword - at 26/3/2024 - 21:59:03
+error: GET en /forgotPassword - at 26/3/2024 - 21:59:03
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 21:59:08
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 21:59:08
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 21:59:08
+warning: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 21:59:18
+http: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 21:59:18
+error: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 21:59:18
+warning: GET en /resetPassword - at 26/3/2024 - 21:59:18
+http: GET en /resetPassword - at 26/3/2024 - 21:59:18
+error: GET en /resetPassword - at 26/3/2024 - 21:59:18
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 21:59:18
+http: GET en /js/forgotpass.js - at 26/3/2024 - 21:59:18
+error: GET en /js/forgotpass.js - at 26/3/2024 - 21:59:18
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 22:12:29
+http: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 22:12:29
+error: GET en /api/users/passwordReset/fe299222-ba29-4a8c-8c73-0c25f8310710 - at 26/3/2024 - 22:12:29
+warning: GET en /forgotPassword - at 26/3/2024 - 22:12:29
+http: GET en /forgotPassword - at 26/3/2024 - 22:12:29
+error: GET en /forgotPassword - at 26/3/2024 - 22:12:29
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:12:44
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:12:44
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:12:44
+warning: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:12:50
+http: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:12:50
+error: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:12:50
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:13:56
+http: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:13:56
+error: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:13:56
+warning: GET en /forgotPassword - at 26/3/2024 - 22:13:56
+http: GET en /forgotPassword - at 26/3/2024 - 22:13:56
+error: GET en /forgotPassword - at 26/3/2024 - 22:13:56
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:14:39
+http: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:14:39
+error: GET en /api/users/passwordReset/72927805-a7f9-4ed0-ad10-0c5621fbd0c6 - at 26/3/2024 - 22:14:39
+warning: GET en /forgotPassword - at 26/3/2024 - 22:14:39
+http: GET en /forgotPassword - at 26/3/2024 - 22:14:39
+error: GET en /forgotPassword - at 26/3/2024 - 22:14:39
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:14:52
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:14:52
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:14:52
+warning: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:14:57
+http: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:14:57
+error: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:14:57
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:16:15
+http: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:16:15
+error: GET en /api/users/passwordReset/0be6500c-2420-426b-91a9-6df44249764e - at 26/3/2024 - 22:16:15
+warning: GET en /forgotPassword - at 26/3/2024 - 22:16:15
+http: GET en /forgotPassword - at 26/3/2024 - 22:16:15
+error: GET en /forgotPassword - at 26/3/2024 - 22:16:15
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:16:18
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:16:18
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:16:18
+warning: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:24
+http: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:24
+error: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:24
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:24
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:24
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:24
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:24
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:24
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:24
+warning: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:41
+http: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:41
+error: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:41
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:41
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:41
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:41
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:41
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:41
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:41
+warning: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:46
+http: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:46
+error: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:46
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:46
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:46
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:46
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:46
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:46
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:46
+warning: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:47
+http: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:47
+error: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:16:47
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:47
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:47
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:16:47
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:47
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:47
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:16:47
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:17:02
+http: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:17:02
+error: GET en /api/users/passwordReset/a18fa089-9b59-4ed9-a4bb-2e3a61869493 - at 26/3/2024 - 22:17:02
+warning: GET en /forgotPassword - at 26/3/2024 - 22:17:02
+http: GET en /forgotPassword - at 26/3/2024 - 22:17:02
+error: GET en /forgotPassword - at 26/3/2024 - 22:17:02
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:05
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:05
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:05
+warning: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:10
+http: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:10
+error: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:10
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:10
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:10
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:10
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:10
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:10
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:10
+warning: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:48
+http: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:48
+error: GET en /api/users/passwordReset/ec5a9917-d9dc-4019-852a-ccfb58c80181 - at 26/3/2024 - 22:17:48
+warning: GET en /forgotPassword - at 26/3/2024 - 22:17:48
+http: GET en /forgotPassword - at 26/3/2024 - 22:17:48
+error: GET en /forgotPassword - at 26/3/2024 - 22:17:48
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:51
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:51
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:17:51
+warning: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:17:58
+http: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:17:58
+error: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:17:58
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:58
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:58
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:17:58
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:58
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:58
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:17:58
+warning: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:09
+http: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:09
+error: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:09
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:09
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:09
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:09
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:09
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:09
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:09
+warning: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:10
+http: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:10
+error: GET en /api/users/passwordReset/caceca4c-3037-4c22-b843-a1796c9df782 - at 26/3/2024 - 22:18:10
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:10
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:10
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:18:10
+warning: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:10
+http: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:10
+error: GET en /js/forgotpass.js - at 26/3/2024 - 22:18:10
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /login - at 26/3/2024 - 22:53:00
+http: GET en /login - at 26/3/2024 - 22:53:00
+error: GET en /login - at 26/3/2024 - 22:53:00
+warning: GET en /forgotPassword - at 26/3/2024 - 22:53:01
+http: GET en /forgotPassword - at 26/3/2024 - 22:53:01
+error: GET en /forgotPassword - at 26/3/2024 - 22:53:01
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:53:04
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:53:04
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:53:04
+warning: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:53:10
+http: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:53:10
+error: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:53:10
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:10
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:10
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:10
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:33
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:33
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:53:33
+warning: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:54:32
+http: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:54:32
+error: GET en /api/users/passwordReset/971a8e5e-3754-454e-a94f-b8a78478fec0 - at 26/3/2024 - 22:54:32
+warning: GET en /forgotPassword - at 26/3/2024 - 22:54:32
+http: GET en /forgotPassword - at 26/3/2024 - 22:54:32
+error: GET en /forgotPassword - at 26/3/2024 - 22:54:32
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:54:34
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:54:34
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:54:34
+warning: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:54:42
+http: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:54:42
+error: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:54:42
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:54:42
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:54:42
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:54:42
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:55:00
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:55:00
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:55:00
+warning: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:57:03
+http: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:57:03
+error: GET en /api/users/passwordReset/a7383d1b-19c0-4471-baea-34f22896ccfb - at 26/3/2024 - 22:57:03
+warning: GET en /forgotPassword - at 26/3/2024 - 22:57:03
+http: GET en /forgotPassword - at 26/3/2024 - 22:57:03
+error: GET en /forgotPassword - at 26/3/2024 - 22:57:03
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 22:57:06
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 22:57:06
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 22:57:06
+warning: GET en /api/users/passwordReset/1baacf3d-50c6-4605-bb0e-4653b58274a6 - at 26/3/2024 - 22:57:12
+http: GET en /api/users/passwordReset/1baacf3d-50c6-4605-bb0e-4653b58274a6 - at 26/3/2024 - 22:57:12
+error: GET en /api/users/passwordReset/1baacf3d-50c6-4605-bb0e-4653b58274a6 - at 26/3/2024 - 22:57:12
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:57:12
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:57:12
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 22:57:12
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 22:57:15
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 22:57:15
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 22:57:15
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /login - at 26/3/2024 - 23:01:12
+http: GET en /login - at 26/3/2024 - 23:01:12
+error: GET en /login - at 26/3/2024 - 23:01:12
+debug: Server is ready to take our messages
+warning: GET en /forgotPassword - at 26/3/2024 - 23:01:15
+http: GET en /forgotPassword - at 26/3/2024 - 23:01:15
+error: GET en /forgotPassword - at 26/3/2024 - 23:01:15
+debug: DB connected
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:01:20
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:01:20
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:01:20
+warning: GET en /api/users/passwordReset/ca2d6220-ef53-449a-8041-659430646746 - at 26/3/2024 - 23:01:44
+http: GET en /api/users/passwordReset/ca2d6220-ef53-449a-8041-659430646746 - at 26/3/2024 - 23:01:44
+error: GET en /api/users/passwordReset/ca2d6220-ef53-449a-8041-659430646746 - at 26/3/2024 - 23:01:44
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:01:44
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:01:44
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:01:44
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:01:49
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:01:49
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:01:49
+error: No se pudo finalizar la sesión
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /login - at 26/3/2024 - 23:03:08
+http: GET en /login - at 26/3/2024 - 23:03:08
+error: GET en /login - at 26/3/2024 - 23:03:08
+warning: GET en /forgotPassword - at 26/3/2024 - 23:03:10
+http: GET en /forgotPassword - at 26/3/2024 - 23:03:10
+error: GET en /forgotPassword - at 26/3/2024 - 23:03:10
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:03:12
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:03:12
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:03:12
+warning: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:03:29
+http: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:03:29
+error: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:03:29
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:03:29
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:03:29
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:03:29
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:34
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:34
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:34
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:48
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:48
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:03:48
+error: No se pudo finalizar la sesión
+warning: GET en /login - at 26/3/2024 - 23:04:21
+http: GET en /login - at 26/3/2024 - 23:04:21
+error: GET en /login - at 26/3/2024 - 23:04:21
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /forgotPassword - at 26/3/2024 - 23:04:27
+http: GET en /forgotPassword - at 26/3/2024 - 23:04:27
+error: GET en /forgotPassword - at 26/3/2024 - 23:04:27
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:04:29
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:04:29
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:04:29
+warning: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:04:40
+http: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:04:40
+error: GET en /api/users/passwordReset/ea8b4640-4390-4d38-a034-fe23e1effad3 - at 26/3/2024 - 23:04:40
+warning: GET en /forgotPassword - at 26/3/2024 - 23:04:40
+http: GET en /forgotPassword - at 26/3/2024 - 23:04:40
+error: GET en /forgotPassword - at 26/3/2024 - 23:04:40
+warning: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:04:51
+http: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:04:51
+error: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:04:51
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:04:51
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:04:51
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:04:51
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:04:58
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:04:58
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:04:58
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:05:08
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:05:08
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:05:08
+error: No se pudo finalizar la sesión
+warning: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:05:36
+http: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:05:36
+error: GET en /api/users/passwordReset/f794740e-b78b-4e93-893d-40d607c942cd - at 26/3/2024 - 23:05:36
+warning: GET en /forgotPassword - at 26/3/2024 - 23:05:36
+http: GET en /forgotPassword - at 26/3/2024 - 23:05:36
+error: GET en /forgotPassword - at 26/3/2024 - 23:05:36
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:05:39
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:05:39
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:05:39
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/156fda2b-b908-4b45-a866-c23112414327 - at 26/3/2024 - 23:06:41
+http: GET en /api/users/passwordReset/156fda2b-b908-4b45-a866-c23112414327 - at 26/3/2024 - 23:06:41
+error: GET en /api/users/passwordReset/156fda2b-b908-4b45-a866-c23112414327 - at 26/3/2024 - 23:06:41
+warning: GET en /forgotPassword - at 26/3/2024 - 23:06:41
+http: GET en /forgotPassword - at 26/3/2024 - 23:06:41
+error: GET en /forgotPassword - at 26/3/2024 - 23:06:41
+debug: Server is ready to take our messages
+warning: GET en /forgotPassword - at 26/3/2024 - 23:07:07
+http: GET en /forgotPassword - at 26/3/2024 - 23:07:07
+error: GET en /forgotPassword - at 26/3/2024 - 23:07:07
+debug: DB connected
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:07:10
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:07:10
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:07:10
+warning: GET en /api/users/passwordReset/f17ab478-4900-4660-85b0-7dc8e6f41b29 - at 26/3/2024 - 23:07:22
+http: GET en /api/users/passwordReset/f17ab478-4900-4660-85b0-7dc8e6f41b29 - at 26/3/2024 - 23:07:22
+error: GET en /api/users/passwordReset/f17ab478-4900-4660-85b0-7dc8e6f41b29 - at 26/3/2024 - 23:07:22
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:07:22
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:07:22
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:07:22
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:07:25
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:07:25
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:07:25
+error: No se pudo finalizar la sesión
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /login - at 26/3/2024 - 23:08:17
+http: GET en /login - at 26/3/2024 - 23:08:17
+error: GET en /login - at 26/3/2024 - 23:08:17
+warning: GET en /forgotPassword - at 26/3/2024 - 23:08:19
+http: GET en /forgotPassword - at 26/3/2024 - 23:08:19
+error: GET en /forgotPassword - at 26/3/2024 - 23:08:19
+warning: POST en /api/users/forgotPassword - at 26/3/2024 - 23:08:21
+http: POST en /api/users/forgotPassword - at 26/3/2024 - 23:08:21
+error: POST en /api/users/forgotPassword - at 26/3/2024 - 23:08:21
+warning: GET en /api/users/passwordReset/c1dcfa1b-9848-4c12-83ce-29e993de6a72 - at 26/3/2024 - 23:08:30
+http: GET en /api/users/passwordReset/c1dcfa1b-9848-4c12-83ce-29e993de6a72 - at 26/3/2024 - 23:08:30
+error: GET en /api/users/passwordReset/c1dcfa1b-9848-4c12-83ce-29e993de6a72 - at 26/3/2024 - 23:08:30
+warning: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:08:30
+http: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:08:30
+error: GET en /api/users/passwordReset/css/styles.css - at 26/3/2024 - 23:08:30
+warning: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:08:36
+http: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:08:36
+error: POST en /api/users/newPassword/asd@asd.com - at 26/3/2024 - 23:08:36
+warning: GET en /login - at 26/3/2024 - 23:08:36
+http: GET en /login - at 26/3/2024 - 23:08:36
+error: GET en /login - at 26/3/2024 - 23:08:36
+warning: POST en /api/users/authentication - at 26/3/2024 - 23:08:40
+http: POST en /api/users/authentication - at 26/3/2024 - 23:08:40
+error: POST en /api/users/authentication - at 26/3/2024 - 23:08:40
+warning: GET en / - at 26/3/2024 - 23:08:40
+http: GET en / - at 26/3/2024 - 23:08:40
+error: GET en / - at 26/3/2024 - 23:08:40
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 26/3/2024 - 23:08:51
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 26/3/2024 - 23:08:51
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 26/3/2024 - 23:08:51
+warning: GET en /carts/css/styles.css - at 26/3/2024 - 23:08:52
+http: GET en /carts/css/styles.css - at 26/3/2024 - 23:08:52
+error: GET en /carts/css/styles.css - at 26/3/2024 - 23:08:52
+warning: GET en / - at 26/3/2024 - 23:08:55
+http: GET en / - at 26/3/2024 - 23:08:55
+error: GET en / - at 26/3/2024 - 23:08:55
+warning: GET en /api/users/logout - at 26/3/2024 - 23:08:57
+http: GET en /api/users/logout - at 26/3/2024 - 23:08:57
+error: GET en /api/users/logout - at 26/3/2024 - 23:08:57
+warning: GET en /login - at 26/3/2024 - 23:08:57
+http: GET en /login - at 26/3/2024 - 23:08:57
+error: GET en /login - at 26/3/2024 - 23:08:57
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /login - at 27/3/2024 - 00:46:04
+http: GET en /login - at 27/3/2024 - 00:46:04
+error: GET en /login - at 27/3/2024 - 00:46:04
+warning: GET en /forgotPassword - at 27/3/2024 - 00:46:06
+http: GET en /forgotPassword - at 27/3/2024 - 00:46:06
+error: GET en /forgotPassword - at 27/3/2024 - 00:46:06
+warning: POST en /api/users/forgotPassword - at 27/3/2024 - 00:46:08
+http: POST en /api/users/forgotPassword - at 27/3/2024 - 00:46:08
+error: POST en /api/users/forgotPassword - at 27/3/2024 - 00:46:08
+warning: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:46:15
+http: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:46:15
+error: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:46:15
+warning: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:46:15
+http: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:46:15
+error: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:46:15
+warning: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:46:19
+http: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:46:19
+error: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:46:19
+error: No se pudo finalizar la sesión
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:02
+http: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:02
+error: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:02
+error: No se pudo finalizar la sesión
+warning: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:06
+http: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:06
+error: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:06
+warning: GET en /forgotPassword - at 27/3/2024 - 00:47:06
+http: GET en /forgotPassword - at 27/3/2024 - 00:47:06
+error: GET en /forgotPassword - at 27/3/2024 - 00:47:06
+warning: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:11
+http: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:11
+error: GET en /api/users/passwordReset/1f783d97-586d-42ec-85ca-de2654f52c31 - at 27/3/2024 - 00:47:11
+warning: GET en /forgotPassword - at 27/3/2024 - 00:47:11
+http: GET en /forgotPassword - at 27/3/2024 - 00:47:11
+error: GET en /forgotPassword - at 27/3/2024 - 00:47:11
+warning: POST en /api/users/forgotPassword - at 27/3/2024 - 00:47:28
+http: POST en /api/users/forgotPassword - at 27/3/2024 - 00:47:28
+error: POST en /api/users/forgotPassword - at 27/3/2024 - 00:47:28
+warning: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:47:37
+http: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:47:37
+error: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:47:37
+warning: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:47:37
+http: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:47:37
+error: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:47:37
+warning: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:42
+http: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:42
+error: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:47:42
+error: No se pudo finalizar la sesión
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:36
+http: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:36
+error: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:36
+warning: GET en /forgotPassword - at 27/3/2024 - 00:48:36
+http: GET en /forgotPassword - at 27/3/2024 - 00:48:36
+error: GET en /forgotPassword - at 27/3/2024 - 00:48:36
+warning: POST en /api/users/forgotPassword - at 27/3/2024 - 00:48:41
+http: POST en /api/users/forgotPassword - at 27/3/2024 - 00:48:41
+error: POST en /api/users/forgotPassword - at 27/3/2024 - 00:48:41
+warning: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:49
+http: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:49
+error: GET en /api/users/passwordReset/3bd76cec-f0f8-47b0-8218-48c6db303909 - at 27/3/2024 - 00:48:49
+warning: GET en /forgotPassword - at 27/3/2024 - 00:48:49
+http: GET en /forgotPassword - at 27/3/2024 - 00:48:49
+error: GET en /forgotPassword - at 27/3/2024 - 00:48:49
+warning: GET en /api/users/passwordReset/24d03e63-b93b-4842-92d1-877c3cf18b39 - at 27/3/2024 - 00:48:58
+http: GET en /api/users/passwordReset/24d03e63-b93b-4842-92d1-877c3cf18b39 - at 27/3/2024 - 00:48:58
+error: GET en /api/users/passwordReset/24d03e63-b93b-4842-92d1-877c3cf18b39 - at 27/3/2024 - 00:48:58
+warning: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:48:58
+http: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:48:58
+error: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 00:48:58
+warning: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:49:01
+http: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:49:01
+error: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:49:01
+warning: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:49:02
+http: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:49:02
+error: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:49:02
+debug: DB connected
+debug: Server is ready to take our messages
+warning: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:51:53
+http: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:51:53
+error: POST en /api/users/newPassword/asd@asd.com - at 27/3/2024 - 00:51:53
+warning: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:51:53
+http: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:51:53
+error: GET en /api/users/newPassword/css/styles.css - at 27/3/2024 - 00:51:53
+warning: GET en /login - at 27/3/2024 - 00:52:01
+http: GET en /login - at 27/3/2024 - 00:52:01
+error: GET en /login - at 27/3/2024 - 00:52:01
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /login - at 27/3/2024 - 10:49:34
+http: GET en /login - at 27/3/2024 - 10:49:34
+error: GET en /login - at 27/3/2024 - 10:49:34
+warning: GET en /favicon.ico - at 27/3/2024 - 10:49:34
+http: GET en /favicon.ico - at 27/3/2024 - 10:49:34
+error: GET en /favicon.ico - at 27/3/2024 - 10:49:34
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:49:40
+http: POST en /api/users/authentication - at 27/3/2024 - 10:49:40
+error: POST en /api/users/authentication - at 27/3/2024 - 10:49:40
+error: Credenciales invalidas
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:49:49
+http: POST en /api/users/authentication - at 27/3/2024 - 10:49:49
+error: POST en /api/users/authentication - at 27/3/2024 - 10:49:49
+error: No existe el usuario
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:49:53
+http: POST en /api/users/authentication - at 27/3/2024 - 10:49:53
+error: POST en /api/users/authentication - at 27/3/2024 - 10:49:53
+error: No existe el usuario
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:50:26
+http: POST en /api/users/authentication - at 27/3/2024 - 10:50:26
+error: POST en /api/users/authentication - at 27/3/2024 - 10:50:26
+error: Credenciales invalidas
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:50:30
+http: POST en /api/users/authentication - at 27/3/2024 - 10:50:30
+error: POST en /api/users/authentication - at 27/3/2024 - 10:50:30
+error: Credenciales invalidas
+warning: POST en /api/users/authentication - at 27/3/2024 - 10:50:33
+http: POST en /api/users/authentication - at 27/3/2024 - 10:50:33
+error: POST en /api/users/authentication - at 27/3/2024 - 10:50:33
+warning: GET en / - at 27/3/2024 - 10:50:33
+http: GET en / - at 27/3/2024 - 10:50:33
+error: GET en / - at 27/3/2024 - 10:50:33
+warning: GET en /api/users/premium/:uid - at 27/3/2024 - 10:50:43
+http: GET en /api/users/premium/:uid - at 27/3/2024 - 10:50:43
+error: GET en /api/users/premium/:uid - at 27/3/2024 - 10:50:43
+error: Ha ocurrido un error: CastError: Cast to ObjectId failed for value ":uid" (type string) at path "_id" for model "users"
+error: No se pudo cambiar el rol
+warning: GET en / - at 27/3/2024 - 11:01:23
+http: GET en / - at 27/3/2024 - 11:01:23
+error: GET en / - at 27/3/2024 - 11:01:23
+warning: GET en /api/users/premium/:uid - at 27/3/2024 - 11:01:26
+http: GET en /api/users/premium/:uid - at 27/3/2024 - 11:01:26
+error: GET en /api/users/premium/:uid - at 27/3/2024 - 11:01:26
+error: Ha ocurrido un error: CastError: Cast to ObjectId failed for value ":uid" (type string) at path "_id" for model "users"
+error: No se pudo cambiar el rol
+warning: GET en / - at 27/3/2024 - 11:08:25
+http: GET en / - at 27/3/2024 - 11:08:25
+error: GET en / - at 27/3/2024 - 11:08:25
+warning: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:08:27
+http: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:08:27
+error: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:08:27
+error: Ha ocurrido un error: CastError: Cast to ObjectId failed for value ":uid" (type string) at path "_id" for model "users"
+error: No se pudo cambiar el rol
+warning: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:09:02
+http: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:09:02
+error: GET en /api/users/premium/:uid? - at 27/3/2024 - 11:09:02
+error: Ha ocurrido un error: CastError: Cast to ObjectId failed for value ":uid" (type string) at path "_id" for model "users"
+error: No se pudo cambiar el rol
+warning: GET en / - at 27/3/2024 - 11:09:27
+http: GET en / - at 27/3/2024 - 11:09:27
+error: GET en / - at 27/3/2024 - 11:09:27
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:30
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:30
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:30
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:42
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:42
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:09:42
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:10:05
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:10:05
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:10:05
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 11:11:03
+http: GET en / - at 27/3/2024 - 11:11:03
+error: GET en / - at 27/3/2024 - 11:11:03
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:05
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:05
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:05
+warning: GET en / - at 27/3/2024 - 11:11:26
+http: GET en / - at 27/3/2024 - 11:11:26
+error: GET en / - at 27/3/2024 - 11:11:26
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:30
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:30
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:30
+warning: GET en / - at 27/3/2024 - 11:11:44
+http: GET en / - at 27/3/2024 - 11:11:44
+error: GET en / - at 27/3/2024 - 11:11:44
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:47
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:47
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:11:47
+warning: GET en /api/users/logout - at 27/3/2024 - 11:12:36
+http: GET en /api/users/logout - at 27/3/2024 - 11:12:36
+error: GET en /api/users/logout - at 27/3/2024 - 11:12:36
+warning: GET en /login - at 27/3/2024 - 11:12:36
+http: GET en /login - at 27/3/2024 - 11:12:36
+error: GET en /login - at 27/3/2024 - 11:12:36
+warning: POST en /api/users/authentication - at 27/3/2024 - 11:12:40
+http: POST en /api/users/authentication - at 27/3/2024 - 11:12:40
+error: POST en /api/users/authentication - at 27/3/2024 - 11:12:40
+warning: GET en / - at 27/3/2024 - 11:12:42
+http: GET en / - at 27/3/2024 - 11:12:42
+error: GET en / - at 27/3/2024 - 11:12:42
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:12:51
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:12:51
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:12:51
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 11:13:33
+http: GET en / - at 27/3/2024 - 11:13:33
+error: GET en / - at 27/3/2024 - 11:13:33
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:34
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:34
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:34
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 11:13:45
+http: GET en / - at 27/3/2024 - 11:13:45
+error: GET en / - at 27/3/2024 - 11:13:45
+debug: DB connected
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:49
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:49
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:13:49
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:00
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:00
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:00
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 11:14:20
+http: GET en / - at 27/3/2024 - 11:14:20
+error: GET en / - at 27/3/2024 - 11:14:20
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:22
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:22
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:22
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:30
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:30
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:14:30
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:15:32
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:15:32
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:15:32
+warning: GET en / - at 27/3/2024 - 11:15:37
+http: GET en / - at 27/3/2024 - 11:15:37
+error: GET en / - at 27/3/2024 - 11:15:37
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 11:16:28
+http: GET en / - at 27/3/2024 - 11:16:28
+error: GET en / - at 27/3/2024 - 11:16:28
+debug: DB connected
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:31
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:31
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:31
+warning: GET en / - at 27/3/2024 - 11:16:31
+http: GET en / - at 27/3/2024 - 11:16:31
+error: GET en / - at 27/3/2024 - 11:16:31
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:34
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:34
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:34
+warning: GET en / - at 27/3/2024 - 11:16:34
+http: GET en / - at 27/3/2024 - 11:16:34
+error: GET en / - at 27/3/2024 - 11:16:34
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:36
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:36
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:36
+warning: GET en / - at 27/3/2024 - 11:16:37
+http: GET en / - at 27/3/2024 - 11:16:37
+error: GET en / - at 27/3/2024 - 11:16:37
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:46
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:46
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:16:46
+warning: GET en / - at 27/3/2024 - 11:16:46
+http: GET en / - at 27/3/2024 - 11:16:46
+error: GET en / - at 27/3/2024 - 11:16:46
+warning: GET en / - at 27/3/2024 - 11:17:05
+http: GET en / - at 27/3/2024 - 11:17:05
+error: GET en / - at 27/3/2024 - 11:17:05
+warning: GET en / - at 27/3/2024 - 11:17:38
+http: GET en / - at 27/3/2024 - 11:17:38
+error: GET en / - at 27/3/2024 - 11:17:38
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /api/users/logout - at 27/3/2024 - 11:18:07
+http: GET en /api/users/logout - at 27/3/2024 - 11:18:07
+error: GET en /api/users/logout - at 27/3/2024 - 11:18:07
+warning: GET en /login - at 27/3/2024 - 11:18:07
+http: GET en /login - at 27/3/2024 - 11:18:07
+error: GET en /login - at 27/3/2024 - 11:18:07
+warning: POST en /api/users/authentication - at 27/3/2024 - 11:18:12
+http: POST en /api/users/authentication - at 27/3/2024 - 11:18:12
+error: POST en /api/users/authentication - at 27/3/2024 - 11:18:12
+warning: GET en / - at 27/3/2024 - 11:18:12
+http: GET en / - at 27/3/2024 - 11:18:12
+error: GET en / - at 27/3/2024 - 11:18:12
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:18:29
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:18:29
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:18:29
+warning: GET en / - at 27/3/2024 - 11:18:30
+http: GET en / - at 27/3/2024 - 11:18:30
+error: GET en / - at 27/3/2024 - 11:18:30
+warning: GET en / - at 27/3/2024 - 11:18:40
+http: GET en / - at 27/3/2024 - 11:18:40
+error: GET en / - at 27/3/2024 - 11:18:40
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 11:19:52
+http: GET en / - at 27/3/2024 - 11:19:52
+error: GET en / - at 27/3/2024 - 11:19:52
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:19:54
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:19:54
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:19:54
+warning: GET en /api/users/logout - at 27/3/2024 - 11:19:54
+http: GET en /api/users/logout - at 27/3/2024 - 11:19:54
+error: GET en /api/users/logout - at 27/3/2024 - 11:19:54
+warning: GET en /login - at 27/3/2024 - 11:19:54
+http: GET en /login - at 27/3/2024 - 11:19:54
+error: GET en /login - at 27/3/2024 - 11:19:54
+warning: POST en /api/users/authentication - at 27/3/2024 - 11:20:01
+http: POST en /api/users/authentication - at 27/3/2024 - 11:20:01
+error: POST en /api/users/authentication - at 27/3/2024 - 11:20:01
+warning: GET en / - at 27/3/2024 - 11:20:01
+http: GET en / - at 27/3/2024 - 11:20:01
+error: GET en / - at 27/3/2024 - 11:20:01
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:05
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:05
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:05
+warning: GET en /api/users/logout - at 27/3/2024 - 11:20:05
+http: GET en /api/users/logout - at 27/3/2024 - 11:20:05
+error: GET en /api/users/logout - at 27/3/2024 - 11:20:05
+warning: GET en /login - at 27/3/2024 - 11:20:05
+http: GET en /login - at 27/3/2024 - 11:20:05
+error: GET en /login - at 27/3/2024 - 11:20:05
+warning: POST en /api/users/authentication - at 27/3/2024 - 11:20:09
+http: POST en /api/users/authentication - at 27/3/2024 - 11:20:09
+error: POST en /api/users/authentication - at 27/3/2024 - 11:20:09
+warning: GET en / - at 27/3/2024 - 11:20:10
+http: GET en / - at 27/3/2024 - 11:20:10
+error: GET en / - at 27/3/2024 - 11:20:10
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:13
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:13
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 11:20:13
+warning: GET en /api/users/logout - at 27/3/2024 - 11:20:13
+http: GET en /api/users/logout - at 27/3/2024 - 11:20:13
+error: GET en /api/users/logout - at 27/3/2024 - 11:20:13
+warning: GET en /login - at 27/3/2024 - 11:20:13
+http: GET en /login - at 27/3/2024 - 11:20:13
+error: GET en /login - at 27/3/2024 - 11:20:13
+warning: POST en /api/users/authentication - at 27/3/2024 - 11:20:16
+http: POST en /api/users/authentication - at 27/3/2024 - 11:20:16
+error: POST en /api/users/authentication - at 27/3/2024 - 11:20:16
+warning: GET en / - at 27/3/2024 - 11:20:17
+http: GET en / - at 27/3/2024 - 11:20:17
+error: GET en / - at 27/3/2024 - 11:20:17
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 11:21:02
+http: GET en / - at 27/3/2024 - 11:21:02
+error: GET en / - at 27/3/2024 - 11:21:02
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 11:22:47
+http: GET en / - at 27/3/2024 - 11:22:47
+error: GET en / - at 27/3/2024 - 11:22:47
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 11:24:15
+http: GET en / - at 27/3/2024 - 11:24:15
+error: GET en / - at 27/3/2024 - 11:24:15
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 11:24:32
+http: GET en /realtimeproducts - at 27/3/2024 - 11:24:32
+error: GET en /realtimeproducts - at 27/3/2024 - 11:24:32
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 11:31:51
+http: GET en /realtimeproducts - at 27/3/2024 - 11:31:51
+error: GET en /realtimeproducts - at 27/3/2024 - 11:31:51
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:30:31
+http: GET en /realtimeproducts - at 27/3/2024 - 12:30:31
+error: GET en /realtimeproducts - at 27/3/2024 - 12:30:31
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:31:29
+http: GET en /realtimeproducts - at 27/3/2024 - 12:31:29
+error: GET en /realtimeproducts - at 27/3/2024 - 12:31:29
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:32:08
+http: GET en /realtimeproducts - at 27/3/2024 - 12:32:08
+error: GET en /realtimeproducts - at 27/3/2024 - 12:32:08
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:40:17
+http: GET en /realtimeproducts - at 27/3/2024 - 12:40:17
+error: GET en /realtimeproducts - at 27/3/2024 - 12:40:17
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:40:20
+http: GET en /realtimeproducts - at 27/3/2024 - 12:40:20
+error: GET en /realtimeproducts - at 27/3/2024 - 12:40:20
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:41:34
+http: GET en /realtimeproducts - at 27/3/2024 - 12:41:34
+error: GET en /realtimeproducts - at 27/3/2024 - 12:41:34
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:41:40
+http: GET en /realtimeproducts - at 27/3/2024 - 12:41:40
+error: GET en /realtimeproducts - at 27/3/2024 - 12:41:40
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:41:43
+http: GET en /realtimeproducts - at 27/3/2024 - 12:41:43
+error: GET en /realtimeproducts - at 27/3/2024 - 12:41:43
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:41:54
+http: GET en /realtimeproducts - at 27/3/2024 - 12:41:54
+error: GET en /realtimeproducts - at 27/3/2024 - 12:41:54
+warning: POST en /api/products - at 27/3/2024 - 12:42:02
+http: POST en /api/products - at 27/3/2024 - 12:42:02
+error: POST en /api/products - at 27/3/2024 - 12:42:02
+warning: GET en /login - at 27/3/2024 - 12:42:02
+http: GET en /login - at 27/3/2024 - 12:42:02
+error: GET en /login - at 27/3/2024 - 12:42:02
+warning: POST en /api/users/authentication - at 27/3/2024 - 12:42:13
+http: POST en /api/users/authentication - at 27/3/2024 - 12:42:13
+error: POST en /api/users/authentication - at 27/3/2024 - 12:42:13
+warning: GET en / - at 27/3/2024 - 12:42:13
+http: GET en / - at 27/3/2024 - 12:42:13
+error: GET en / - at 27/3/2024 - 12:42:13
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:42:15
+http: GET en /realtimeproducts - at 27/3/2024 - 12:42:15
+error: GET en /realtimeproducts - at 27/3/2024 - 12:42:15
+warning: POST en /api/products - at 27/3/2024 - 12:42:20
+http: POST en /api/products - at 27/3/2024 - 12:42:20
+error: POST en /api/products - at 27/3/2024 - 12:42:20
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:43:14
+http: GET en /realtimeproducts - at 27/3/2024 - 12:43:14
+error: GET en /realtimeproducts - at 27/3/2024 - 12:43:14
+warning: POST en /api/products - at 27/3/2024 - 12:43:19
+http: POST en /api/products - at 27/3/2024 - 12:43:19
+error: POST en /api/products - at 27/3/2024 - 12:43:19
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:44:11
+http: GET en /realtimeproducts - at 27/3/2024 - 12:44:11
+error: GET en /realtimeproducts - at 27/3/2024 - 12:44:11
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 12:44:17
+http: POST en /api/products - at 27/3/2024 - 12:44:17
+error: POST en /api/products - at 27/3/2024 - 12:44:17
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:47:55
+http: GET en /realtimeproducts - at 27/3/2024 - 12:47:55
+error: GET en /realtimeproducts - at 27/3/2024 - 12:47:55
+warning: POST en /api/products - at 27/3/2024 - 12:48:04
+http: POST en /api/products - at 27/3/2024 - 12:48:04
+error: POST en /api/products - at 27/3/2024 - 12:48:04
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:49:49
+http: GET en /realtimeproducts - at 27/3/2024 - 12:49:49
+error: GET en /realtimeproducts - at 27/3/2024 - 12:49:49
+warning: POST en /api/products - at 27/3/2024 - 12:49:54
+http: POST en /api/products - at 27/3/2024 - 12:49:54
+error: POST en /api/products - at 27/3/2024 - 12:49:54
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:50:10
+http: GET en /realtimeproducts - at 27/3/2024 - 12:50:10
+error: GET en /realtimeproducts - at 27/3/2024 - 12:50:10
+warning: POST en /api/products - at 27/3/2024 - 12:50:15
+http: POST en /api/products - at 27/3/2024 - 12:50:15
+error: POST en /api/products - at 27/3/2024 - 12:50:15
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:50:32
+http: GET en /realtimeproducts - at 27/3/2024 - 12:50:32
+error: GET en /realtimeproducts - at 27/3/2024 - 12:50:32
+debug: DB connected
+debug: Server is ready to take our messages
+warning: POST en /api/products - at 27/3/2024 - 12:50:35
+http: POST en /api/products - at 27/3/2024 - 12:50:35
+error: POST en /api/products - at 27/3/2024 - 12:50:35
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:51:51
+http: GET en /realtimeproducts - at 27/3/2024 - 12:51:51
+error: GET en /realtimeproducts - at 27/3/2024 - 12:51:51
+warning: POST en /api/products - at 27/3/2024 - 12:51:55
+http: POST en /api/products - at 27/3/2024 - 12:51:55
+error: POST en /api/products - at 27/3/2024 - 12:51:55
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:52:47
+http: GET en /realtimeproducts - at 27/3/2024 - 12:52:47
+error: GET en /realtimeproducts - at 27/3/2024 - 12:52:47
+warning: POST en /api/products - at 27/3/2024 - 12:52:52
+http: POST en /api/products - at 27/3/2024 - 12:52:52
+error: POST en /api/products - at 27/3/2024 - 12:52:52
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:53:48
+http: GET en /realtimeproducts - at 27/3/2024 - 12:53:48
+error: GET en /realtimeproducts - at 27/3/2024 - 12:53:48
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:54:19
+http: GET en /realtimeproducts - at 27/3/2024 - 12:54:19
+error: GET en /realtimeproducts - at 27/3/2024 - 12:54:19
+debug: DB connected
+debug: Server is ready to take our messages
+warning: POST en /api/products - at 27/3/2024 - 12:54:25
+http: POST en /api/products - at 27/3/2024 - 12:54:25
+error: POST en /api/products - at 27/3/2024 - 12:54:25
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:54:49
+http: GET en /realtimeproducts - at 27/3/2024 - 12:54:49
+error: GET en /realtimeproducts - at 27/3/2024 - 12:54:49
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 12:54:53
+http: POST en /api/products - at 27/3/2024 - 12:54:53
+error: POST en /api/products - at 27/3/2024 - 12:54:53
+warning: GET en / - at 27/3/2024 - 12:55:01
+http: GET en / - at 27/3/2024 - 12:55:01
+error: GET en / - at 27/3/2024 - 12:55:01
+warning: GET en / - at 27/3/2024 - 12:55:03
+http: GET en / - at 27/3/2024 - 12:55:03
+error: GET en / - at 27/3/2024 - 12:55:03
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:55:05
+http: GET en /realtimeproducts - at 27/3/2024 - 12:55:05
+error: GET en /realtimeproducts - at 27/3/2024 - 12:55:05
+warning: POST en /api/products - at 27/3/2024 - 12:55:09
+http: POST en /api/products - at 27/3/2024 - 12:55:09
+error: POST en /api/products - at 27/3/2024 - 12:55:09
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:55:40
+http: GET en /realtimeproducts - at 27/3/2024 - 12:55:40
+error: GET en /realtimeproducts - at 27/3/2024 - 12:55:40
+debug: DB connected
+debug: Server is ready to take our messages
+warning: POST en /api/products - at 27/3/2024 - 12:55:44
+http: POST en /api/products - at 27/3/2024 - 12:55:44
+error: POST en /api/products - at 27/3/2024 - 12:55:44
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:56:06
+http: GET en /realtimeproducts - at 27/3/2024 - 12:56:06
+error: GET en /realtimeproducts - at 27/3/2024 - 12:56:06
+warning: POST en /api/products - at 27/3/2024 - 12:56:09
+http: POST en /api/products - at 27/3/2024 - 12:56:09
+error: POST en /api/products - at 27/3/2024 - 12:56:09
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:56:29
+http: GET en /realtimeproducts - at 27/3/2024 - 12:56:29
+error: GET en /realtimeproducts - at 27/3/2024 - 12:56:29
+warning: POST en /api/products - at 27/3/2024 - 12:56:32
+http: POST en /api/products - at 27/3/2024 - 12:56:32
+error: POST en /api/products - at 27/3/2024 - 12:56:32
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 12:59:41
+http: GET en /realtimeproducts - at 27/3/2024 - 12:59:41
+error: GET en /realtimeproducts - at 27/3/2024 - 12:59:41
+warning: POST en /api/products - at 27/3/2024 - 12:59:45
+http: POST en /api/products - at 27/3/2024 - 12:59:45
+error: POST en /api/products - at 27/3/2024 - 12:59:45
+warning: POST en /api/products - at 27/3/2024 - 13:00:20
+http: POST en /api/products - at 27/3/2024 - 13:00:20
+error: POST en /api/products - at 27/3/2024 - 13:00:20
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:01:37
+http: GET en /realtimeproducts - at 27/3/2024 - 13:01:37
+error: GET en /realtimeproducts - at 27/3/2024 - 13:01:37
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:01:40
+http: POST en /api/products - at 27/3/2024 - 13:01:40
+error: POST en /api/products - at 27/3/2024 - 13:01:40
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:02:31
+http: GET en /realtimeproducts - at 27/3/2024 - 13:02:31
+error: GET en /realtimeproducts - at 27/3/2024 - 13:02:31
+warning: POST en /api/products - at 27/3/2024 - 13:02:34
+http: POST en /api/products - at 27/3/2024 - 13:02:34
+error: POST en /api/products - at 27/3/2024 - 13:02:34
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:03:13
+http: POST en /api/products - at 27/3/2024 - 13:03:13
+error: POST en /api/products - at 27/3/2024 - 13:03:13
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:05:15
+http: GET en /realtimeproducts - at 27/3/2024 - 13:05:15
+error: GET en /realtimeproducts - at 27/3/2024 - 13:05:15
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:05:22
+http: GET en /realtimeproducts - at 27/3/2024 - 13:05:22
+error: GET en /realtimeproducts - at 27/3/2024 - 13:05:22
+warning: POST en /api/products - at 27/3/2024 - 13:05:30
+http: POST en /api/products - at 27/3/2024 - 13:05:30
+error: POST en /api/products - at 27/3/2024 - 13:05:30
+error: El campo CODE se encuentra repetido
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:06:38
+http: GET en /realtimeproducts - at 27/3/2024 - 13:06:38
+error: GET en /realtimeproducts - at 27/3/2024 - 13:06:38
+warning: POST en /api/products - at 27/3/2024 - 13:06:41
+http: POST en /api/products - at 27/3/2024 - 13:06:41
+error: POST en /api/products - at 27/3/2024 - 13:06:41
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:07:10
+http: GET en /realtimeproducts - at 27/3/2024 - 13:07:10
+error: GET en /realtimeproducts - at 27/3/2024 - 13:07:10
+warning: POST en /api/products - at 27/3/2024 - 13:07:14
+http: POST en /api/products - at 27/3/2024 - 13:07:14
+error: POST en /api/products - at 27/3/2024 - 13:07:14
+error: No se agrego el producto
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:07:25
+http: GET en /realtimeproducts - at 27/3/2024 - 13:07:25
+error: GET en /realtimeproducts - at 27/3/2024 - 13:07:25
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:07:51
+http: GET en /realtimeproducts - at 27/3/2024 - 13:07:51
+error: GET en /realtimeproducts - at 27/3/2024 - 13:07:51
+debug: Server is ready to take our messages
+warning: POST en /api/products - at 27/3/2024 - 13:07:54
+http: POST en /api/products - at 27/3/2024 - 13:07:54
+error: POST en /api/products - at 27/3/2024 - 13:07:54
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:09:50
+http: GET en /realtimeproducts - at 27/3/2024 - 13:09:50
+error: GET en /realtimeproducts - at 27/3/2024 - 13:09:50
+warning: POST en /api/products - at 27/3/2024 - 13:09:56
+http: POST en /api/products - at 27/3/2024 - 13:09:56
+error: POST en /api/products - at 27/3/2024 - 13:09:56
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:10:44
+http: GET en /realtimeproducts - at 27/3/2024 - 13:10:44
+error: GET en /realtimeproducts - at 27/3/2024 - 13:10:44
+warning: POST en /api/products - at 27/3/2024 - 13:10:48
+http: POST en /api/products - at 27/3/2024 - 13:10:48
+error: POST en /api/products - at 27/3/2024 - 13:10:48
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:19:25
+http: GET en /realtimeproducts - at 27/3/2024 - 13:19:25
+error: GET en /realtimeproducts - at 27/3/2024 - 13:19:25
+warning: POST en /api/products - at 27/3/2024 - 13:19:28
+http: POST en /api/products - at 27/3/2024 - 13:19:28
+error: POST en /api/products - at 27/3/2024 - 13:19:28
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:23:16
+http: GET en /realtimeproducts - at 27/3/2024 - 13:23:16
+error: GET en /realtimeproducts - at 27/3/2024 - 13:23:16
+warning: POST en /api/products - at 27/3/2024 - 13:23:21
+http: POST en /api/products - at 27/3/2024 - 13:23:21
+error: POST en /api/products - at 27/3/2024 - 13:23:21
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:23:40
+http: GET en /realtimeproducts - at 27/3/2024 - 13:23:40
+error: GET en /realtimeproducts - at 27/3/2024 - 13:23:40
+warning: POST en /api/products - at 27/3/2024 - 13:23:44
+http: POST en /api/products - at 27/3/2024 - 13:23:44
+error: POST en /api/products - at 27/3/2024 - 13:23:44
+error: No se agrego el producto
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:24:26
+http: GET en /realtimeproducts - at 27/3/2024 - 13:24:26
+error: GET en /realtimeproducts - at 27/3/2024 - 13:24:26
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:24:55
+http: GET en /realtimeproducts - at 27/3/2024 - 13:24:55
+error: GET en /realtimeproducts - at 27/3/2024 - 13:24:55
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:25:12
+http: POST en /api/products - at 27/3/2024 - 13:25:12
+error: POST en /api/products - at 27/3/2024 - 13:25:12
+warning: GET en / - at 27/3/2024 - 13:25:30
+http: GET en / - at 27/3/2024 - 13:25:30
+error: GET en / - at 27/3/2024 - 13:25:30
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:25:33
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:25:33
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:25:33
+warning: GET en /api/users/logout - at 27/3/2024 - 13:25:35
+http: GET en /api/users/logout - at 27/3/2024 - 13:25:35
+error: GET en /api/users/logout - at 27/3/2024 - 13:25:35
+warning: GET en /login - at 27/3/2024 - 13:25:35
+http: GET en /login - at 27/3/2024 - 13:25:35
+error: GET en /login - at 27/3/2024 - 13:25:35
+warning: POST en /api/users/authentication - at 27/3/2024 - 13:25:38
+http: POST en /api/users/authentication - at 27/3/2024 - 13:25:38
+error: POST en /api/users/authentication - at 27/3/2024 - 13:25:38
+warning: GET en / - at 27/3/2024 - 13:25:40
+http: GET en / - at 27/3/2024 - 13:25:40
+error: GET en / - at 27/3/2024 - 13:25:40
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:25:47
+http: GET en /realtimeproducts - at 27/3/2024 - 13:25:47
+error: GET en /realtimeproducts - at 27/3/2024 - 13:25:47
+warning: POST en /api/products - at 27/3/2024 - 13:25:56
+http: POST en /api/products - at 27/3/2024 - 13:25:56
+error: POST en /api/products - at 27/3/2024 - 13:25:56
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:26:10
+http: GET en /realtimeproducts - at 27/3/2024 - 13:26:10
+error: GET en /realtimeproducts - at 27/3/2024 - 13:26:10
+warning: GET en / - at 27/3/2024 - 13:26:14
+http: GET en / - at 27/3/2024 - 13:26:14
+error: GET en / - at 27/3/2024 - 13:26:14
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:29:39
+http: GET en /realtimeproducts - at 27/3/2024 - 13:29:39
+error: GET en /realtimeproducts - at 27/3/2024 - 13:29:39
+debug: Server is ready to take our messages
+debug: DB connected
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:30:46
+http: GET en /realtimeproducts - at 27/3/2024 - 13:30:46
+error: GET en /realtimeproducts - at 27/3/2024 - 13:30:46
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:31:04
+http: GET en /realtimeproducts - at 27/3/2024 - 13:31:04
+error: GET en /realtimeproducts - at 27/3/2024 - 13:31:04
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:32:34
+http: GET en /realtimeproducts - at 27/3/2024 - 13:32:34
+error: GET en /realtimeproducts - at 27/3/2024 - 13:32:34
+debug: Server is ready to take our messages
+debug: DB connected
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:36
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:36
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:36
+warning: GET en / - at 27/3/2024 - 13:32:42
+http: GET en / - at 27/3/2024 - 13:32:42
+error: GET en / - at 27/3/2024 - 13:32:42
+warning: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:32:44
+http: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:32:44
+error: POST en /api/users/premium/65e72245d8e85eb00de1d7f0 - at 27/3/2024 - 13:32:44
+warning: GET en /api/users/logout - at 27/3/2024 - 13:32:44
+http: GET en /api/users/logout - at 27/3/2024 - 13:32:44
+error: GET en /api/users/logout - at 27/3/2024 - 13:32:44
+warning: GET en /login - at 27/3/2024 - 13:32:44
+http: GET en /login - at 27/3/2024 - 13:32:44
+error: GET en /login - at 27/3/2024 - 13:32:44
+warning: POST en /api/users/authentication - at 27/3/2024 - 13:32:48
+http: POST en /api/users/authentication - at 27/3/2024 - 13:32:48
+error: POST en /api/users/authentication - at 27/3/2024 - 13:32:48
+warning: GET en / - at 27/3/2024 - 13:32:48
+http: GET en / - at 27/3/2024 - 13:32:48
+error: GET en / - at 27/3/2024 - 13:32:48
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:32:50
+http: GET en /realtimeproducts - at 27/3/2024 - 13:32:50
+error: GET en /realtimeproducts - at 27/3/2024 - 13:32:50
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:53
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:53
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:32:53
+warning: POST en /api/products - at 27/3/2024 - 13:33:08
+http: POST en /api/products - at 27/3/2024 - 13:33:08
+error: POST en /api/products - at 27/3/2024 - 13:33:08
+warning: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:33:12
+http: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:33:12
+error: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:33:12
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:33:51
+http: GET en /realtimeproducts - at 27/3/2024 - 13:33:51
+error: GET en /realtimeproducts - at 27/3/2024 - 13:33:51
+debug: Server is ready to take our messages
+debug: DB connected
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:33:57
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:33:57
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:33:57
+warning: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:34:02
+http: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:34:02
+error: DELETE en /api/products/66044a459140c5bf13e70924 - at 27/3/2024 - 13:34:02
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:34:14
+http: GET en /realtimeproducts - at 27/3/2024 - 13:34:14
+error: GET en /realtimeproducts - at 27/3/2024 - 13:34:14
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:34:18
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:34:18
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:34:18
+warning: POST en /api/products - at 27/3/2024 - 13:34:25
+http: POST en /api/products - at 27/3/2024 - 13:34:25
+error: POST en /api/products - at 27/3/2024 - 13:34:25
+warning: DELETE en /api/products/66044a91941fe81e06ab0c7d - at 27/3/2024 - 13:34:28
+http: DELETE en /api/products/66044a91941fe81e06ab0c7d - at 27/3/2024 - 13:34:28
+error: DELETE en /api/products/66044a91941fe81e06ab0c7d - at 27/3/2024 - 13:34:28
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:36:17
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:36:17
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:36:17
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:36:19
+http: GET en /realtimeproducts - at 27/3/2024 - 13:36:19
+error: GET en /realtimeproducts - at 27/3/2024 - 13:36:19
+warning: POST en /api/products - at 27/3/2024 - 13:36:22
+http: POST en /api/products - at 27/3/2024 - 13:36:22
+error: POST en /api/products - at 27/3/2024 - 13:36:22
+error: No se agrego el producto
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:36:36
+http: GET en /realtimeproducts - at 27/3/2024 - 13:36:36
+error: GET en /realtimeproducts - at 27/3/2024 - 13:36:36
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:36:39
+http: POST en /api/products - at 27/3/2024 - 13:36:39
+error: POST en /api/products - at 27/3/2024 - 13:36:39
+warning: DELETE en /api/products/66044b17daa056088298ff3f - at 27/3/2024 - 13:36:43
+http: DELETE en /api/products/66044b17daa056088298ff3f - at 27/3/2024 - 13:36:43
+error: DELETE en /api/products/66044b17daa056088298ff3f - at 27/3/2024 - 13:36:43
+debug: Server is ready to take our messages
+debug: DB connected
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:38:04
+http: GET en /realtimeproducts - at 27/3/2024 - 13:38:04
+error: GET en /realtimeproducts - at 27/3/2024 - 13:38:04
+warning: POST en /api/products - at 27/3/2024 - 13:38:07
+http: POST en /api/products - at 27/3/2024 - 13:38:07
+error: POST en /api/products - at 27/3/2024 - 13:38:07
+warning: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:08
+http: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:08
+error: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:08
+warning: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:15
+http: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:15
+error: DELETE en /api/products/66044b6fc52c7f69e1b66b39 - at 27/3/2024 - 13:38:15
+error: No se elimino el producto
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:38:32
+http: GET en /realtimeproducts - at 27/3/2024 - 13:38:32
+error: GET en /realtimeproducts - at 27/3/2024 - 13:38:32
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:38:40
+http: POST en /api/products - at 27/3/2024 - 13:38:40
+error: POST en /api/products - at 27/3/2024 - 13:38:40
+warning: DELETE en /api/products/66044b90a297ca58d5471481 - at 27/3/2024 - 13:38:42
+http: DELETE en /api/products/66044b90a297ca58d5471481 - at 27/3/2024 - 13:38:42
+error: DELETE en /api/products/66044b90a297ca58d5471481 - at 27/3/2024 - 13:38:42
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:39:03
+http: GET en /realtimeproducts - at 27/3/2024 - 13:39:03
+error: GET en /realtimeproducts - at 27/3/2024 - 13:39:03
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:39:10
+http: POST en /api/products - at 27/3/2024 - 13:39:10
+error: POST en /api/products - at 27/3/2024 - 13:39:10
+warning: DELETE en /api/products/66044bae9eae4d716be4d862 - at 27/3/2024 - 13:39:11
+http: DELETE en /api/products/66044bae9eae4d716be4d862 - at 27/3/2024 - 13:39:11
+error: DELETE en /api/products/66044bae9eae4d716be4d862 - at 27/3/2024 - 13:39:11
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:39:33
+http: GET en /realtimeproducts - at 27/3/2024 - 13:39:33
+error: GET en /realtimeproducts - at 27/3/2024 - 13:39:33
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:39:38
+http: POST en /api/products - at 27/3/2024 - 13:39:38
+error: POST en /api/products - at 27/3/2024 - 13:39:38
+warning: DELETE en /api/products/66044bca931997906fdd6950 - at 27/3/2024 - 13:39:40
+http: DELETE en /api/products/66044bca931997906fdd6950 - at 27/3/2024 - 13:39:40
+error: DELETE en /api/products/66044bca931997906fdd6950 - at 27/3/2024 - 13:39:40
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:40:04
+http: GET en /realtimeproducts - at 27/3/2024 - 13:40:04
+error: GET en /realtimeproducts - at 27/3/2024 - 13:40:04
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:40:38
+http: GET en /realtimeproducts - at 27/3/2024 - 13:40:38
+error: GET en /realtimeproducts - at 27/3/2024 - 13:40:38
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/products - at 27/3/2024 - 13:40:43
+http: POST en /api/products - at 27/3/2024 - 13:40:43
+error: POST en /api/products - at 27/3/2024 - 13:40:43
+warning: DELETE en /api/products/66044c0bb32f56a6b8fe4090 - at 27/3/2024 - 13:40:45
+http: DELETE en /api/products/66044c0bb32f56a6b8fe4090 - at 27/3/2024 - 13:40:45
+error: DELETE en /api/products/66044c0bb32f56a6b8fe4090 - at 27/3/2024 - 13:40:45
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 13:42:06
+http: GET en / - at 27/3/2024 - 13:42:06
+error: GET en / - at 27/3/2024 - 13:42:06
+warning: GET en /api/users/logout - at 27/3/2024 - 13:42:08
+http: GET en /api/users/logout - at 27/3/2024 - 13:42:08
+error: GET en /api/users/logout - at 27/3/2024 - 13:42:08
+warning: GET en /login - at 27/3/2024 - 13:42:08
+http: GET en /login - at 27/3/2024 - 13:42:08
+error: GET en /login - at 27/3/2024 - 13:42:08
+warning: POST en /api/users/authentication - at 27/3/2024 - 13:42:25
+http: POST en /api/users/authentication - at 27/3/2024 - 13:42:25
+error: POST en /api/users/authentication - at 27/3/2024 - 13:42:25
+warning: GET en / - at 27/3/2024 - 13:42:25
+http: GET en / - at 27/3/2024 - 13:42:25
+error: GET en / - at 27/3/2024 - 13:42:25
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:42:27
+http: GET en /realtimeproducts - at 27/3/2024 - 13:42:27
+error: GET en /realtimeproducts - at 27/3/2024 - 13:42:27
+warning: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:42:28
+http: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:42:28
+error: DELETE en /api/products/65f1ac697535207707e37e24 - at 27/3/2024 - 13:42:28
+warning: GET en / - at 27/3/2024 - 13:42:31
+http: GET en / - at 27/3/2024 - 13:42:31
+error: GET en / - at 27/3/2024 - 13:42:31
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en /api/users/logout - at 27/3/2024 - 13:43:26
+http: GET en /api/users/logout - at 27/3/2024 - 13:43:26
+error: GET en /api/users/logout - at 27/3/2024 - 13:43:26
+warning: GET en /login - at 27/3/2024 - 13:43:26
+http: GET en /login - at 27/3/2024 - 13:43:26
+error: GET en /login - at 27/3/2024 - 13:43:26
+warning: GET en /register - at 27/3/2024 - 13:43:27
+http: GET en /register - at 27/3/2024 - 13:43:27
+error: GET en /register - at 27/3/2024 - 13:43:27
+warning: POST en /api/users/register - at 27/3/2024 - 13:43:42
+http: POST en /api/users/register - at 27/3/2024 - 13:43:42
+error: POST en /api/users/register - at 27/3/2024 - 13:43:42
+error: El usuario ya existe
+warning: GET en /register - at 27/3/2024 - 13:43:43
+http: GET en /register - at 27/3/2024 - 13:43:43
+error: GET en /register - at 27/3/2024 - 13:43:43
+error: Ha ocurrido un error: MongoServerError: E11000 duplicate key error collection: test.users index: email_1 dup key: { email: "agustinmalbec123@gmail.com" }
+warning: GET en /login - at 27/3/2024 - 13:44:43
+http: GET en /login - at 27/3/2024 - 13:44:43
+error: GET en /login - at 27/3/2024 - 13:44:43
+warning: GET en /api/sessions/github - at 27/3/2024 - 13:44:45
+http: GET en /api/sessions/github - at 27/3/2024 - 13:44:45
+error: GET en /api/sessions/github - at 27/3/2024 - 13:44:45
+warning: GET en /api/sessions/githubcallback?code=093b4bb13388142cbd21 - at 27/3/2024 - 13:44:46
+http: GET en /api/sessions/githubcallback?code=093b4bb13388142cbd21 - at 27/3/2024 - 13:44:46
+error: GET en /api/sessions/githubcallback?code=093b4bb13388142cbd21 - at 27/3/2024 - 13:44:46
+warning: GET en / - at 27/3/2024 - 13:44:47
+http: GET en / - at 27/3/2024 - 13:44:47
+error: GET en / - at 27/3/2024 - 13:44:47
+warning: GET en /api/users/logout - at 27/3/2024 - 13:45:59
+http: GET en /api/users/logout - at 27/3/2024 - 13:45:59
+error: GET en /api/users/logout - at 27/3/2024 - 13:45:59
+warning: GET en /login - at 27/3/2024 - 13:45:59
+http: GET en /login - at 27/3/2024 - 13:45:59
+error: GET en /login - at 27/3/2024 - 13:45:59
+warning: GET en /forgotPassword - at 27/3/2024 - 13:46:01
+http: GET en /forgotPassword - at 27/3/2024 - 13:46:01
+error: GET en /forgotPassword - at 27/3/2024 - 13:46:01
+warning: POST en /api/users/forgotPassword - at 27/3/2024 - 13:46:06
+http: POST en /api/users/forgotPassword - at 27/3/2024 - 13:46:06
+error: POST en /api/users/forgotPassword - at 27/3/2024 - 13:46:06
+warning: GET en /api/users/passwordReset/b671796d-93a8-4d2f-8a22-991ad984ec4d - at 27/3/2024 - 13:46:16
+http: GET en /api/users/passwordReset/b671796d-93a8-4d2f-8a22-991ad984ec4d - at 27/3/2024 - 13:46:16
+error: GET en /api/users/passwordReset/b671796d-93a8-4d2f-8a22-991ad984ec4d - at 27/3/2024 - 13:46:16
+warning: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 13:46:16
+http: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 13:46:16
+error: GET en /api/users/passwordReset/css/styles.css - at 27/3/2024 - 13:46:16
+warning: POST en /api/users/newPassword/agustinmalbec123@gmail.com - at 27/3/2024 - 13:46:22
+http: POST en /api/users/newPassword/agustinmalbec123@gmail.com - at 27/3/2024 - 13:46:22
+error: POST en /api/users/newPassword/agustinmalbec123@gmail.com - at 27/3/2024 - 13:46:22
+warning: GET en /login - at 27/3/2024 - 13:46:22
+http: GET en /login - at 27/3/2024 - 13:46:22
+error: GET en /login - at 27/3/2024 - 13:46:22
+warning: POST en /api/users/authentication - at 27/3/2024 - 13:46:28
+http: POST en /api/users/authentication - at 27/3/2024 - 13:46:28
+error: POST en /api/users/authentication - at 27/3/2024 - 13:46:28
+warning: GET en / - at 27/3/2024 - 13:46:29
+http: GET en / - at 27/3/2024 - 13:46:29
+error: GET en / - at 27/3/2024 - 13:46:29
+debug: Server is ready to take our messages
+debug: DB connected
+warning: GET en / - at 27/3/2024 - 13:50:58
+http: GET en / - at 27/3/2024 - 13:50:58
+error: GET en / - at 27/3/2024 - 13:50:58
+warning: GET en /api/users/logout - at 27/3/2024 - 13:51:01
+http: GET en /api/users/logout - at 27/3/2024 - 13:51:01
+error: GET en /api/users/logout - at 27/3/2024 - 13:51:01
+warning: GET en /login - at 27/3/2024 - 13:51:01
+http: GET en /login - at 27/3/2024 - 13:51:01
+error: GET en /login - at 27/3/2024 - 13:51:01
+warning: POST en /api/users/authentication - at 27/3/2024 - 13:51:07
+http: POST en /api/users/authentication - at 27/3/2024 - 13:51:07
+error: POST en /api/users/authentication - at 27/3/2024 - 13:51:07
+warning: GET en / - at 27/3/2024 - 13:51:07
+http: GET en / - at 27/3/2024 - 13:51:07
+error: GET en / - at 27/3/2024 - 13:51:07
+warning: GET en /realtimeproducts - at 27/3/2024 - 13:51:09
+http: GET en /realtimeproducts - at 27/3/2024 - 13:51:09
+error: GET en /realtimeproducts - at 27/3/2024 - 13:51:09
+warning: POST en /api/products - at 27/3/2024 - 13:51:14
+http: POST en /api/products - at 27/3/2024 - 13:51:14
+error: POST en /api/products - at 27/3/2024 - 13:51:14
+warning: GET en / - at 27/3/2024 - 13:51:17
+http: GET en / - at 27/3/2024 - 13:51:17
+error: GET en / - at 27/3/2024 - 13:51:17
+warning: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:51:17
+http: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:51:17
+error: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:51:17
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:51:21
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:51:21
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:51:21
+info: Se agrego el producto
+warning: GET en / - at 27/3/2024 - 13:52:21
+http: GET en / - at 27/3/2024 - 13:52:21
+error: GET en / - at 27/3/2024 - 13:52:21
+warning: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:21
+http: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:21
+error: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:21
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:52:24
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:52:24
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:52:24
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:52:24
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:52:24
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:52:24
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 13:52:54
+http: GET en / - at 27/3/2024 - 13:52:54
+error: GET en / - at 27/3/2024 - 13:52:54
+warning: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:55
+http: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:55
+error: GET en /class=%22card-img-top%22 - at 27/3/2024 - 13:52:55
+warning: GET en / - at 27/3/2024 - 13:54:19
+http: GET en / - at 27/3/2024 - 13:54:19
+error: GET en / - at 27/3/2024 - 13:54:19
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:25
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:25
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:25
+info: Se agrego el producto
+warning: GET en / - at 27/3/2024 - 13:54:44
+http: GET en / - at 27/3/2024 - 13:54:44
+error: GET en / - at 27/3/2024 - 13:54:44
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:49
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:49
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:54:49
+info: Se agrego el producto
+warning: GET en / - at 27/3/2024 - 13:55:02
+http: GET en / - at 27/3/2024 - 13:55:02
+error: GET en / - at 27/3/2024 - 13:55:02
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:05
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:05
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:05
+info: Se agrego el producto
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:55:14
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:55:14
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:55:14
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:55:14
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:55:14
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:55:14
+debug: DB connected
+debug: Server is ready to take our messages
+warning: GET en / - at 27/3/2024 - 13:55:40
+http: GET en / - at 27/3/2024 - 13:55:40
+error: GET en / - at 27/3/2024 - 13:55:40
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:42
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:42
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:55:42
+info: Se agrego el producto
+warning: GET en / - at 27/3/2024 - 13:56:01
+http: GET en / - at 27/3/2024 - 13:56:01
+error: GET en / - at 27/3/2024 - 13:56:01
+debug: Server is ready to take our messages
+debug: DB connected
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:03
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:03
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:03
+warning: GET en / - at 27/3/2024 - 13:56:33
+http: GET en / - at 27/3/2024 - 13:56:33
+error: GET en / - at 27/3/2024 - 13:56:33
+debug: DB connected
+debug: Server is ready to take our messages
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:36
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:36
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:56:36
+warning: No se puede agregar un producto que hayas creado
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:56:50
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:56:50
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:56:50
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:56:50
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:56:50
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:56:50
+warning: PUT en /api/carts/65e72245d8e85eb00de1d7ee/purchase - at 27/3/2024 - 13:56:54
+http: PUT en /api/carts/65e72245d8e85eb00de1d7ee/purchase - at 27/3/2024 - 13:56:54
+error: PUT en /api/carts/65e72245d8e85eb00de1d7ee/purchase - at 27/3/2024 - 13:56:54
+warning: GET en / - at 27/3/2024 - 13:57:07
+http: GET en / - at 27/3/2024 - 13:57:07
+error: GET en / - at 27/3/2024 - 13:57:07
+warning: GET en / - at 27/3/2024 - 13:57:09
+http: GET en / - at 27/3/2024 - 13:57:09
+error: GET en / - at 27/3/2024 - 13:57:09
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:10
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:10
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:10
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:10
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:10
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:10
+warning: GET en / - at 27/3/2024 - 13:57:11
+http: GET en / - at 27/3/2024 - 13:57:11
+error: GET en / - at 27/3/2024 - 13:57:11
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:12
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:12
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:12
+warning: No se puede agregar un producto que hayas creado
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:13
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:13
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:13
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:13
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:13
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:13
+warning: GET en / - at 27/3/2024 - 13:57:18
+http: GET en / - at 27/3/2024 - 13:57:18
+error: GET en / - at 27/3/2024 - 13:57:18
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:20
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:20
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:57:20
+warning: No se puede agregar un producto que hayas creado
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:25
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:25
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:25
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:25
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:25
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:25
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:43
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:43
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:57:43
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:43
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:43
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:57:43
+warning: GET en / - at 27/3/2024 - 13:57:58
+http: GET en / - at 27/3/2024 - 13:57:58
+error: GET en / - at 27/3/2024 - 13:57:58
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:58:04
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:58:04
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/66044e8374aabd16378caba9 - at 27/3/2024 - 13:58:04
+warning: No se puede agregar un producto que hayas creado
+warning: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/65f1ac697535207707e37e1e - at 27/3/2024 - 13:58:06
+http: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/65f1ac697535207707e37e1e - at 27/3/2024 - 13:58:06
+error: POST en /api/carts/65e72245d8e85eb00de1d7ee/product/65f1ac697535207707e37e1e - at 27/3/2024 - 13:58:06
+info: Se agrego el producto
+warning: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:58:07
+http: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:58:07
+error: GET en /carts/65e72245d8e85eb00de1d7ee - at 27/3/2024 - 13:58:07
+warning: GET en /carts/css/styles.css - at 27/3/2024 - 13:58:07
+http: GET en /carts/css/styles.css - at 27/3/2024 - 13:58:07
+error: GET en /carts/css/styles.css - at 27/3/2024 - 13:58:07

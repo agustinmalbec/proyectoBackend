@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { isUser } from '../middleware/auth.middleware.js';
 import { middlewarePassportJWT } from '../middleware/jwt.middleware.js';
 import messagesController from '../controllers/messages.controller.js';
+import { authorization } from '../utils/utils.js';
 
 const messagesRouter = Router();
 
@@ -15,7 +15,7 @@ messagesRouter.get('/', async (req, res) => {
     }
 });
 
-messagesRouter.post('/', middlewarePassportJWT, isUser, async (req, res) => {
+messagesRouter.post('/', middlewarePassportJWT, authorization('user'), async (req, res) => {
     const message = req.body;
     try {
         const newMessage = await messagesController.addMessage(message);
