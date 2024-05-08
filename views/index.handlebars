@@ -1,32 +1,38 @@
 {{#if user}}
-<h2>Bienvenido {{user.first_name}} a la pagina de productos</h2>
-<p id="userCart" data-id="{{user.cart._id}}">Tus datos son</p>
-<ul>
-	<li>Nombre: {{user.first_name}}</li>
-	<li>Apellido: {{user.last_name}}</li>
-	<li>Email: {{user.email}}</li>
-	<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
-	<a href="/api/users/logout" type="submit">Cerrar sesión</a>
-</ul>
+<h2 id="userCart" data-id="{{user.cart._id}}">Bienvenido {{user.first_name}} a la pagina de productos</h2>
+<a href="/user">Ir al perfil</a>
+{{#if isAdmin}}
+<a href="/realtimeproducts" type="submit">Editar productos</a>
+{{/if}}
+<a href="/carts/{{user.cart._id}}">Ir al carrito</a>
+<a href="/api/users/logout" type="submit">Cerrar sesión</a>
 {{else}}
 <h2>Bienvenido invitado, estos son nuestros productos</h2>
 <a href="/login">Inicia sesión</a>
 {{/if}}
 
+<div class="container d-flex flex-wrap text-center">
 {{#each data.docs}}
-<div class="col-md-3">
-	<div class="card">
+<div class="g-col-6">
+	<div class="card" style="width: 18rem; ">
+		{{#if thumbnails}}
+		<img src={{thumbnails}} class="card-img-top" alt="...">
+		{{/if}}
+		<div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><b>Nombre:</b> {{title}}</li>
 			<li class="list-group-item"><b>Categoría:</b> {{category}}</li>
 			<li class="list-group-item"><b>Precio:</b> {{price}}</li>
+			<li class="list-group-item"><b>Stock:</b> {{stock}}</li>
 		</ul>
-		<button class="add" id="{{_id}}">Agregar al carrito</button>
+		<button class="add btn btn-primary" id="{{_id}}">Agregar al carrito</button>
+		</div>
 	</div>
 </div>
 {{/each}}
+</div>
 
-<div class="col-12 text-center">
+<div class="container col-12 text-center">
 	<nav>
 		<ul class="pagination">
 			{{#if data.hasPrevPage}} <li class="page-item"> {{else}}

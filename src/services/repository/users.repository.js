@@ -29,4 +29,8 @@ export default class UserRepository {
     async updateUser(id, user) {
         return await this.service.updateUser(id, user);
     }
+
+    async deleteUser(id) {
+        return await this.service.deleteUser(id);
+    }
 }

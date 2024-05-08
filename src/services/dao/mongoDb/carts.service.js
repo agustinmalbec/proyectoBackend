@@ -9,8 +9,8 @@ export default class CartService {
         return await this.model.create(cart);
     }
 
-    async addProductToCart(cartId, products) {
-        return await this.model.updateOne(cartId, products);
+    async updateCart(cartId, products) {
+        return await this.model.updateOne({ _id: cartId }, products);
     }
 
     async getCarts() {
@@ -23,9 +23,5 @@ export default class CartService {
 
     async deleteCart(cartId) {
         return await this.model.findByIdAndDelete({ _id: cartId });
-    }
-
-    async updateCart(cartId, products) {
-        return await this.model.findByIdAndUpdate(cartId, { products }, { new: true });
     }
 }

@@ -14,7 +14,7 @@ sessionsRouter.get('/logout', (req, res) => {
             res.send('Sesión cerrada correctamente');
         });
     } catch (error) {
-        console.log(`Ha ocurrido un error: ${error}`);
+        req.logger.error(`No se finalizo la sesión`);
         res.status(500).send(error);
     }
 });
@@ -23,11 +23,16 @@ sessionsRouter.get('/github', passport.authenticate('github', { scope: ['user:em
 
 sessionsRouter.get('/githubcallback', passport.authenticate('github', { failureRedirect: '' }), async (req, res) => {
     const user = req.user;
-    const token = generateToken(user);
-    res.cookie('jwtCookieToken', token, {
-        httpOnly: true,
-        maxAge: 60000,
-    }).redirect('/');
+    try {
+        const token = generateToken(user);
+        res.cookie('jwtCookieToken', token, {
+            httpOnly: true,
+            maxAge: 60000,
+        }).redirect('/');
+    } catch (error) {
+        req.logger.error(`No se inicio la sesión con github`);
+        res.status(500).send(error);
+    }
 });
 
 sessionsRouter.get('/current', middlewarePassportJWT, async (req, res) => {

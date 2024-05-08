@@ -1,20 +1,27 @@
 const socket = io();
-
 const products = [];
 const addForm = document.getElementById('addProduct');
 const deleteForm = document.getElementById('deleteProduct');
 
-addForm.addEventListener('submit', e => {
+addForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const data = Object.fromEntries(new FormData(e.target));
-    socket.emit('addProduct', data);
+    await fetch('/api/products', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+    });
+    await socket.emit('update');
     addForm.reset();
 });
 
-deleteForm.addEventListener('submit', e => {
+deleteForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const data = Object.fromEntries(new FormData(e.target));
-    socket.emit('deleteProduct', data);
+    await fetch(`/api/products/${{ _id: data }}`, {
+        method: 'DELETE',
+    });
+    await socket.emit('update');
     deleteForm.reset();
 })
 
@@ -23,17 +30,24 @@ const render = async (data) => {
     html.innerHTML = '';
     await data.forEach((element) => {
         const elementHtml = document.createElement('div');
-        elementHtml.innerHTML = ` <h3>${element.title}</h3>
-    <p>${element.description}</p>
-    <p>${element.code}</p>
-    <p>${element.price}</p>
-    <p>${element.stock}</p>
-    <p>${element.category}</p>
-    ${element.thumbnail ? `<p>${element.thumbnail}</p>` : ''}
+        elementHtml.classList.add('card', 'g-col-6');
+        elementHtml.innerHTML = ` <h2>${element.title}</h2>
+    <p>Código: ${element.code}</p>
+    <p>Precio: ${element.price}</p>
+    <p>Stock: ${element.stock}</p>
+    <p>Categoría: ${element.category}</p>
+    <button onclick="deleteProduct('${element._id}')">Eliminar</button>
     `;
         html.appendChild(elementHtml);
     });
 };
+
+async function deleteProduct(productId) {
+    await fetch(`/api/products/${productId}`, {
+        method: 'DELETE'
+    });
+    await socket.emit('update');
+}
 
 socket.on('products', (data) => {
     render(data);

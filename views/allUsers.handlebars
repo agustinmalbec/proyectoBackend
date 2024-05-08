@@ -1,0 +1,23 @@
+<h2>Usuarios</h2>
+<div class="container d-flex flex-wrap text-center">
+  {{#each users}}
+    <div class="g-col-6">
+      <div class="card" style="width: 18rem; ">
+        <div class="card-body">
+          <h3 class="card-title">Datos del usuario</h3>
+          <ul>
+            <li>Nombre: {{first_name}} {{last_name}}</li>
+            <li>Email: {{email}}</li>
+            <li>Rol: {{role}}</li>
+          </ul>
+          <form action="/api/users/premium/{{_id}}" method="post">
+            <button type="submit">Cambiar de rol</button>
+          </form>
+          <form action="/api/users/{{_id}}" method="post">
+            <button type="submit">Eliminar usuario</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

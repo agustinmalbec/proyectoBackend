@@ -6,7 +6,7 @@ export default class UserService {
     }
 
     async getUsers() {
-        return await this.model.find();
+        return await this.model.find().lean();
     }
 
     async getUserByEmail(email) {
@@ -27,5 +27,9 @@ export default class UserService {
 
     async updateUser(id, user) {
         return await this.model.updateOne({ _id: id }, user);
+    }
+
+    async deleteUser(id) {
+        return await this.model.deleteOne({ _id: id });
     }
 }

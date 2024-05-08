@@ -1,4 +1,5 @@
 import { userService } from "../services/service.js";
+import { logger } from '../middleware/logger.middleware.js';
 
 class UserController {
     constructor() {
@@ -9,7 +10,7 @@ class UserController {
         try {
             return await this.controller.getUsers();
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -17,7 +18,7 @@ class UserController {
         try {
             return await this.controller.getUserByEmail(email);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -25,7 +26,7 @@ class UserController {
         try {
             return await this.controller.getUserById(id);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -33,7 +34,7 @@ class UserController {
         try {
             return await this.controller.getUserByCart(cart);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -41,7 +42,7 @@ class UserController {
         try {
             return await this.controller.createUser(user);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -49,7 +50,15 @@ class UserController {
         try {
             return await this.controller.updateUser(id, user);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
+        }
+    }
+
+    async deleteUser(id) {
+        try {
+            return await this.controller.deleteUser(id);
+        } catch (error) {
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 }

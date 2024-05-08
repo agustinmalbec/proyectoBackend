@@ -6,6 +6,8 @@ import userController from "../controllers/users.controller.js";
 import { createHash, isValidPassword } from "../utils/utils.js";
 import environment from "./environment.config.js";
 import cartController from "../controllers/carts.controller.js";
+import { ObjectId } from "mongodb";
+import { logger } from '../middleware/logger.middleware.js';
 
 const localStrategy = passportLocal.Strategy;
 const JwtStrategy = jwtStrategy.Strategy;
@@ -19,7 +21,7 @@ const initializePassport = () => {
             try {
                 const exist = await userController.getUserByEmail(email);
                 if (exist) {
-                    console.log('El usuario ya existe');
+                    logger.error('El usuario ya existe');
                     done(null, false);
                 }
                 const user = {
@@ -43,15 +45,25 @@ const initializePassport = () => {
         async (req, username, password, done) => {
             const { email } = req.body;
             try {
-                const user = await userController.getUserByEmail(email);
-
+                let user = {};
+                if (email === environment.ADMIN_USERNAME) {
+                    user.role = 'admin';
+                    user.email = environment.ADMIN_USERNAME;
+                    user.password = environment.ADMIN_PASSWORD;
+                    user._id = new ObjectId('111111111111111111111111');
+                    if (user.password !== password) throw new Error('Contraseña incorrecta');
+                } else {
+                    user = await userController.getUserByEmail(email);
+                    user.last_connection = new Date();
+                    await userController.updateUser(user._id, user)
+                }
                 if (!user) {
-                    console.log('No existe el usuario');
+                    logger.error('No existe el usuario');
                     return done(null, false);
                 }
 
-                if (!isValidPassword(user, password)) {
-                    console.log('Credenciales invalidas');
+                if (!isValidPassword(user, password) && email !== environment.ADMIN_USERNAME) {
+                    logger.error('Credenciales invalidas');
                     return done(null, false);
                 }
 
@@ -71,12 +83,12 @@ const initializePassport = () => {
             let user = await userController.getUserById(id);
             done(null, user);
         } catch (error) {
-            console.log('Error al deserializar usuario' + error);
+            logger.error('Error al deserializar usuario' + error);
         }
     });
 
     passport.use('github', new GitHubStrategy({
-        clientID: environment.GITHUB_CLIENT_ID,
+        clientID: 'Iv1.121bc709b88c8123',
         clientSecret: environment.GITHUB_CLIENT_SECRET,
         callbackURL: 'http://localhost:8080/api/sessions/githubcallback',
     }, async (accesToken, refreshToken, profile, done) => {
@@ -117,7 +129,6 @@ const initializePassport = () => {
         }
     ));
 }
-
 
 const cookieExtractor = (req) => {
     let token = null;

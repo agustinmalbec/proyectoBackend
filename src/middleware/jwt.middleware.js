@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import passport from 'passport';
 import environment from '../config/environment.config.js';
 
-const privatekey = environment.SECRET_KEY;
+const privatekey = 'privatekey';
 
 const generateToken = (user) => {
     return jwt.sign({ user }, privatekey, { expiresIn: '1h' });

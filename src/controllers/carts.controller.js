@@ -1,5 +1,6 @@
 import { cartService } from "../services/service.js";
 import productController from "./products.controller.js";
+import { logger } from '../middleware/logger.middleware.js';
 
 class CartController {
     constructor() {
@@ -10,7 +11,7 @@ class CartController {
         try {
             return await this.controller.addCart(cart);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -18,11 +19,11 @@ class CartController {
         try {
             const find = await this.controller.getCartById(cartId);
             if (!find) {
-                throw new Error(`El carrito con id: ${error}, no existe`);
+                return logger.error(`El carrito con id: ${error}, no existe`);
             }
             return await find;
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -36,18 +37,18 @@ class CartController {
             } else {
                 cart.products.push({ product: prod._id, quantity: 1 });
             }
-            return await this.controller.addProductToCart({ _id: cart._id }, { products: cart.products });
+
+            return await this.controller.updateCart({ _id: cart._id }, { products: cart.products });
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
     async updateCart(cartId, products) {
         try {
-            await this.controller.getCartById(cartId);
             return await this.controller.updateCart(cartId, products);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -55,15 +56,15 @@ class CartController {
         try {
             return await this.controller.deleteCart(cartId);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
     async deleteCartProducts(cartId) {
         try {
-            return await this.controller.updateCart(cartId, []);
+            return await this.controller.updateCart(cartId, { products: [] });
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -73,9 +74,9 @@ class CartController {
             cart.products = cart.products.filter(
                 (product) => product._id.toString() !== productId
             );
-            return await cart.save();
+            return await this.controller.updateCart(cartId, { products: cart.products });
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -89,10 +90,10 @@ class CartController {
                 cart.products[productIndex].quantity = quantity;
                 return await cart.save();
             } else {
-                throw new Error("Error al actualizar cantidad de productos");
+                logger.error("Error al actualizar cantidad de productos");
             }
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 }

@@ -18,7 +18,17 @@ const userSchema = new mongoose.Schema({
     role: {
         type: String,
         default: 'user',
-    }
+    },
+    documents: {
+        default: [],
+        type: [
+            {
+                name: String,
+                reference: String
+            }
+        ]
+    },
+    last_connection: String
 });
 
 userSchema.pre('find', function () {

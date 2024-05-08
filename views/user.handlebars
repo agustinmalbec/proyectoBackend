@@ -1,0 +1,30 @@
+<h3>Tus datos son</h3>
+<ul>
+  <li>Nombre: {{user.first_name}}</li>
+  <li>Apellido: {{user.last_name}}</li>
+  <li>Email: {{user.email}}</li>
+</ul>
+<form action="/api/users/premium/{{user._id}}" method="post">
+  <button type="submit">Cambiar rol</button>
+</form>
+{{#if alertData.showAlert}}
+  <script>
+    Swal.fire({ title: '{{alertData.title}}', icon: '{{alertData.icon}}',
+    timer:1500 });
+  </script>
+{{/if}}
+
+<h3>Carga tu documentación</h3>
+<form
+  action="/api/users/{{user._id}}/documents"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <label for="image">Imagen de perfil</label>
+  <input type="file" name="profile" id="image" />
+  <label for="productImage">Imagen de producto</label>
+  <input type="file" name="products" id="productImage" />
+  <label for="documents">Documentos</label>
+  <input type="file" name="documents" id="file" multiple />
+  <input type="submit" value="Cargar documentos" />
+</form>

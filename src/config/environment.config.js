@@ -19,6 +19,7 @@ dotenv.config({
 export default {
     PORT: process.env.PORT,
     DB_LINK: process.env.DB_LINK,
+    DB_TEST_LINK: process.env.DB_TEST_LINK,
     SECRET_KEY: process.env.SECRET_KEY,
     ADMIN_USERNAME: process.env.ADMIN_USERNAME,
     ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
@@ -27,4 +28,5 @@ export default {
     GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
     GMAIL_ACCOUNT: process.env.GMAIL_ACCOUNT,
     GMAIL_PASSWORD: process.env.GMAIL_PASSWORD,
+    environment: environment
 };

@@ -1,7 +1,4 @@
-<h2 id="userCart" data-id="{{cartId}}">Su carrito es el
-  {{cartId}}
-</h2>
-<a href="/">Volver al index</a>
+<h2 id="userCart" data-id="{{cartId}}">Su carrito</h2>
 
 {{#each data}}
   <div class="col-md-3">
@@ -13,6 +10,7 @@
         <li class="list-group-item"><b>Precio: </b> {{this.product.price}}</li>
         <li class="list-group-item"><b>Cantidad: </b> {{this.quantity}}</li>
       </ul>
+      <button class="delete" id="{{this._id}}">Eliminar producto</button>
     </div>
   </div>
 {{/each}}

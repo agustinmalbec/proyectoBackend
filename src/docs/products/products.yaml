@@ -1,0 +1,176 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtiene todos los productos de la App.
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Respuesta exitosa! Se retorna un arreglo con los productos.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+    post:
+      summary: Crea un producto.
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Respuesta exitosa! Se creó el producto.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+
+  /api/products/{pid}:
+    get:
+      summary: Obtiene un producto mediante su id.
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto que se solicita.
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: Respuesta exitosa! se retorna el producto.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+    put:
+      summary: Actualiza un producto mediante su id.
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto que se solicita.
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: Respuesta exitosa! Se actualizo el producto.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+    delete:
+      summary: Elimina un producto mediante su id.
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto que se solicita.
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: Respuesta exitosa! Se elimino el producto.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+
+  /api/products/mockingproducts:
+    post:
+      summary: Crea un array de productos random.
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Respuesta exitosa! Se crearon los productos.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "400":
+          description: Se envió un dato no valido.
+        "500":
+          description: Error inesperado en el servidor, no se pudo manejar el proceso.
+
+components:
+  schemas:
+    Products:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: Id auto generado de Mongo.
+        title:
+          type: String,
+          description: Titulo del producto
+        category:
+          type: String
+          description: Categoría del producto
+        description:
+          type: String
+          description: Descripción del producto
+        price:
+          type: Number
+          description: Precio del producto
+        thumbnails:
+          type: Array
+          description: Lista de imágenes del producto
+        code:
+          type: Number
+          description: Código del producto
+        stock:
+          type: Number
+          description: Stock del producto
+        status:
+          type: Boolean
+          description: Estado del producto
+        owner:
+          type: String
+          description: Creador del producto
+      example:
+        _id: ObjectId("65f1ac697535207707e37e21")
+        title: Luxurious Bronze Sausages
+        category: Garden
+        description: New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart
+        price: 832
+        thumbnails: ["https://loremflickr.com/640/480?lock=4145831947010048"]
+        code: 218
+        stock: 64
+        status: true
+        owner: admin

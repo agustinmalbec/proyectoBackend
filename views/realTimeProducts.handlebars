@@ -1,30 +1,61 @@
 <h2>Productos en tiempo real</h2>
 <h2>Agrega un producto</h2>
-<form id="addProduct">
-  <label for="title">Titulo</label>
-  <input type="text" name="title" id="title" />
-  <label for="description">Descripción</label>
-  <input type="text" name="description" id="description" />
-  <label for="price">Precio</label>
-  <input type="number" name="price" id="price" />
-  <label for="code">Código</label>
-  <input type="text" name="code" id="code" />
-  <label for="stock">Stock</label>
-  <input type="number" name="stock" id="stock" />
-  <label for="category">Categoría</label>
-  <input type="text" name="category" id="category" />
-  <input type="submit" />
+<form
+  id="addProduct"
+  class="container text-center"
+  action="/api/products"
+  method="post"
+>
+  <div class="row">
+    <div class="col">
+      <label class="form-label" for="title">Titulo</label>
+      <input class="form-control" type="text" name="title" id="title" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="description">Descripción</label>
+      <input
+        class="form-control"
+        type="text"
+        name="description"
+        id="description"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label class="form-label" for="price">Precio</label>
+      <input class="form-control" type="number" name="price" id="price" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="code">Código</label>
+      <input class="form-control" type="text" name="code" id="code" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label class="form-label" for="stock">Stock</label>
+      <input class="form-control" type="number" name="stock" id="stock" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="category">Categoría</label>
+      <input class="form-control" type="text" name="category" id="category" />
+    </div>
+  </div>
+  <input class="btn btn-primary" type="submit" />
 </form>
 
 <h2>Eliminar un producto</h2>
 <form id="deleteProduct">
   <label for="id">Id</label>
-  <input type="number" name="id" id="id" />
+  <input type="text" name="id" id="id" />
   <input type="submit" />
 </form>
 
 <h3>Productos</h3>
-<div id="productList"></div>
+<div id="productList" class="container d-flex flex-wrap text-center"></div>
+
+<div id="navBar">
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="js/realTimeProducts.js"></script>

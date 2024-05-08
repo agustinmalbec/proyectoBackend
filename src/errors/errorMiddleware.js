@@ -2,7 +2,6 @@ import errorCodes from './errorCodes.js';
 
 export default (error, req, res, next) => {
     console.error("Error detectado entrando al Error Handler");
-    console.log(error.cause);
     switch (error.code) {
         case errorCodes.INVALID_TYPES_ERROR:
             res.status(400).send({ status: "error", error: error.message });

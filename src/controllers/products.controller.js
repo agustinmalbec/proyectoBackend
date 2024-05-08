@@ -2,6 +2,7 @@ import { productService } from "../services/service.js";
 import CustomError from '../errors/customError.js';
 import { createProductErrorInfo } from '../errors/customMessage.js'
 import errorCodes from "../errors/errorCodes.js";
+import { logger } from '../middleware/logger.middleware.js';
 
 class ProductController {
     constructor() {
@@ -12,7 +13,7 @@ class ProductController {
         try {
             return await this.controller.getProducts(limit, page, filter, sort);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -20,11 +21,12 @@ class ProductController {
         try {
             return await this.controller.getProductById(productId);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
     async addProduct(product) {
+
         //try {
         const requiredFields = ['title', 'description', 'price', 'category', 'code', 'stock'];
         for (let field of requiredFields) {
@@ -37,13 +39,14 @@ class ProductController {
                 })
             }
         }
-        const find = await this.controller.getProductByCode({ code: product.code });
+
+        const find = await this.controller.getProductByCode(product.code);
         if (find !== null) {
-            throw new Error("El campo CODE se encuentra repetido");
+            return logger.error("El campo CODE se encuentra repetido");
         }
         return await this.controller.addProduct(product);
         /* } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         } */
     }
 
@@ -51,7 +54,7 @@ class ProductController {
         try {
             return await this.controller.updateProduct(productId, update);
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 
@@ -59,7 +62,7 @@ class ProductController {
         try {
             return await this.controller.deleteProduct(productId)
         } catch (error) {
-            throw new Error(`Ha ocurrido un error: ${error}`);
+            logger.error(`Ha ocurrido un error: ${error}`);
         }
     }
 }

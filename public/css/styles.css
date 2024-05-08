@@ -1,0 +1,12 @@
+.card{
+    width: 18rem;
+}
+
+.card-img-top{
+    max-height: 214px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}

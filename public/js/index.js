@@ -11,6 +11,14 @@ for (let n of addButton) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ quantity: 1 }),
-        });
-    });
+        })
+            .then(data => {
+                Swal.fire({
+                    title: 'Apregado al carrito',
+                    icon: 'success',
+                    timer: 1200,
+                    showConfirmButton: false
+                });
+            });
+    })
 }

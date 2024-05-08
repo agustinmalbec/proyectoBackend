@@ -7,8 +7,8 @@ export default class CartRepository {
         return await this.service.addCart(cart);
     }
 
-    async addProductToCart(cartId, products) {
-        return await this.service.addProductToCart(cartId, products);
+    async updateCart(cartId, products) {
+        return await this.service.updateCart(cartId, products);
     }
 
     async getCarts() {
@@ -21,9 +21,5 @@ export default class CartRepository {
 
     async deleteCart(cartId) {
         return await this.service.deleteCart(cartId);
-    }
-
-    async updateCart(cartId, products) {
-        return await this.service.updateCart(cartId, products);
     }
 }
